@@ -3,6 +3,7 @@
 Repositiry contins https://github.com/facebook/yoga implementation for [vvvv-gamma](https://visualprogramming.net/)
 
 ### This repo is in early WIP stage
+- [ ] Fix todos
 - [ ] Code cleanup
 - [ ] Nodes set
 - [ ] [Tests](https://github.com/facebook/yoga/tree/main/tests)
