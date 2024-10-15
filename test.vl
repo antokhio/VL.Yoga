@@ -39,7 +39,7 @@
               <Choice Kind="OperationCallFlag" Name="StyleSetWidth" />
             </p:NodeReference>
             <Pin Id="AiwEa6AVqhPNjCibixXGoC" Name="Input" Kind="StateInputPin" />
-            <Pin Id="S9jWopuRz69QdLkYlpVtzO" Name="Width" Kind="InputPin" DefaultValue="100" />
+            <Pin Id="S9jWopuRz69QdLkYlpVtzO" Name="Width" Kind="InputPin" DefaultValue="95.93" />
             <Pin Id="TRmmXVK91CcPAk6d10oqnk" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="698,274,81,26" Id="GKCp7KzQE36P8yALthaFvB">
@@ -48,7 +48,7 @@
               <Choice Kind="OperationCallFlag" Name="StyleSetHeight" />
             </p:NodeReference>
             <Pin Id="LQdWNZsx8xpOWPJN9POAwL" Name="Input" Kind="StateInputPin" />
-            <Pin Id="V8jw6szBqe7L03A47yXGGa" Name="Height" Kind="InputPin" DefaultValue="100" />
+            <Pin Id="V8jw6szBqe7L03A47yXGGa" Name="Height" Kind="InputPin" DefaultValue="99.31" />
             <Pin Id="KgAtV6yEcFeNHwUGBt2RQt" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="945,172,53,26" Id="VCr8nrKDlHUP0sEimt4ZAb">
@@ -78,18 +78,7 @@
             <Pin Id="A26KaWpoERFPVnYAvDQRWx" Name="Height" Kind="InputPin" DefaultValue="100" />
             <Pin Id="E0PIK5pFrssQb9GvG46FRy" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="602,357,66,26" Id="BwK5fGsffayP7T9cNwkTWK">
-            <p:NodeReference LastCategoryFullName="VL.Yoga.YogaNode" LastDependency="VL.Yoga.dll">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="AssemblyCategory" Name="YogaNode" />
-              <Choice Kind="OperationCallFlag" Name="InsertChild" />
-            </p:NodeReference>
-            <Pin Id="VuLHmxjSGoBPFJfyTyzfFf" Name="Input" Kind="StateInputPin" />
-            <Pin Id="LinGitwaoKrPRKvY1DdEAV" Name="Child" Kind="InputPin" />
-            <Pin Id="F11QnOaQu3ZMwun2Y4LZbP" Name="Index" Kind="InputPin" />
-            <Pin Id="SOoJdIPB4HOM1G2smIb4Ab" Name="Output" Kind="StateOutputPin" />
-          </Node>
-          <Node Bounds="602,452,88,26" Id="E3dLM8Np9b6QVQL946g4V9">
+          <Node Bounds="460,585,88,26" Id="E3dLM8Np9b6QVQL946g4V9">
             <p:NodeReference LastCategoryFullName="VL.Yoga.YogaNode" LastDependency="VL.Yoga.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="YogaNode" />
@@ -101,7 +90,7 @@
             <Pin Id="A95mypTrje4P2lgFeb2Jtq" Name="Owner Direction" Kind="InputPin" />
             <Pin Id="V6q6mdVo6rEPfACTtOVNOR" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="629,551,79,26" Id="UOjbLHHJKKyQI7cxCIE19x">
+          <Node Bounds="601,557,79,26" Id="UOjbLHHJKKyQI7cxCIE19x">
             <p:NodeReference LastCategoryFullName="VL.Yoga.YogaNode" LastDependency="VL.Yoga.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="LayoutGetLeft" />
@@ -110,7 +99,7 @@
             <Pin Id="SkonwrZRsi4OiFBJRt5j71" Name="Output" Kind="StateOutputPin" />
             <Pin Id="Ds6Sm45pxsSNsEsOR1cBgO" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="627,599,79,26" Id="Hrr6d4Idcc5OoZHFlAq99d">
+          <Node Bounds="599,605,79,26" Id="Hrr6d4Idcc5OoZHFlAq99d">
             <p:NodeReference LastCategoryFullName="VL.Yoga.YogaNode" LastDependency="VL.Yoga.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="LayoutGetTop" />
@@ -119,7 +108,7 @@
             <Pin Id="Eqnm8jD7ZgrLEjwFaAY3u7" Name="Output" Kind="StateOutputPin" />
             <Pin Id="Dj1xeXURIuqPUgpBSG8R5f" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="627,646,88,26" Id="M5p5ancI1T7PektTi9Xh2O">
+          <Node Bounds="599,652,88,26" Id="M5p5ancI1T7PektTi9Xh2O">
             <p:NodeReference LastCategoryFullName="VL.Yoga.YogaNode" LastDependency="VL.Yoga.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="LayoutGetWidth" />
@@ -128,8 +117,8 @@
             <Pin Id="R1KGAp7PvByQCJKfwEEBGo" Name="Output" Kind="StateOutputPin" />
             <Pin Id="QRArtfd6NdzOUeHOu6beRx" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="MkkZ9Qi2xqlOXyrDRr7SFf" Comment="" Bounds="804,714,35,21" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="628,697,92,26" Id="OOssEUbDgC5PPCfKBmGJLe">
+          <Pad Id="MkkZ9Qi2xqlOXyrDRr7SFf" Comment="" Bounds="776,720,35,21" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="600,703,92,26" Id="OOssEUbDgC5PPCfKBmGJLe">
             <p:NodeReference LastCategoryFullName="VL.Yoga.YogaNode" LastDependency="VL.Yoga.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="LayoutGetHeight" />
@@ -138,18 +127,7 @@
             <Pin Id="Qsqf8SPXfuqNzLt0DXzEAd" Name="Output" Kind="StateOutputPin" />
             <Pin Id="Vuskfqp1OG4P9NBYZTDaWI" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="OpA0zDFldePOUWxQtI6qKj" Comment="" Bounds="792,770,35,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="599,408,66,26" Id="D2eURttYq9oMeTqztQuA4w">
-            <p:NodeReference LastCategoryFullName="VL.Yoga.YogaNode" LastDependency="VL.Yoga.dll">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="AssemblyCategory" Name="YogaNode" />
-              <Choice Kind="OperationCallFlag" Name="InsertChild" />
-            </p:NodeReference>
-            <Pin Id="M2aY3TG9is7QCQfJL7nJuw" Name="Input" Kind="StateInputPin" />
-            <Pin Id="FyJGjUCHt7nLJCtctfmdUg" Name="Child" Kind="InputPin" />
-            <Pin Id="LCve6CKpxDyNzZCxObz47q" Name="Index" Kind="InputPin" DefaultValue="1" />
-            <Pin Id="B4stOvbsTjSLotk9rPwmGD" Name="Output" Kind="StateOutputPin" />
-          </Node>
+          <Pad Id="OpA0zDFldePOUWxQtI6qKj" Comment="" Bounds="764,776,35,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="768,434,79,26" Id="R4WrCDusMD8LWBBKC67ROX">
             <p:NodeReference LastCategoryFullName="VL.Yoga.YogaNode" LastDependency="VL.Yoga.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -190,8 +168,33 @@
           </Node>
           <Pad Id="NDjkw4BZ6EiLgUKkDCIWPa" Comment="" Bounds="1116,468,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="DtznpEe0zpNQDqxg73shkP" Comment="" Bounds="1109,522,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="600,396,69,26" Id="PsEboMzPA4FLwHOw6jn7BG">
+            <p:NodeReference LastCategoryFullName="VL.Yoga.YogaNode" LastDependency="VL.Yoga.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="YogaNode" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="SetChildren" />
+            </p:NodeReference>
+            <Pin Id="GP7FzFZx0DOM8aPrNp7QrI" Name="Input" Kind="StateInputPin" />
+            <Pin Id="MiWWuBc3dm7OgGDbVFHjRF" Name="Children" Kind="InputPin" />
+            <Pin Id="DTvQq82Ahu6LnfYDFbPOlR" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="685,357,39,19" Id="JEmwmYdKPEVLvBoChFdzOw">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="Cons" />
+            </p:NodeReference>
+            <Pin Id="HX5y8m7vWnINzussozU6Gh" Name="Input" Kind="InputPin" />
+            <Pin Id="BKdvcHjFolHPyjNTNWk1hB" Name="Input 2" Kind="InputPin" />
+            <Pin Id="P0oUcexdU4AM3QXRH1mowC" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="SLqDlvsM7dZPr122o3R4Sw" Comment="Height" Bounds="788,156,35,15" ShowValueBox="true" isIOBox="true" Value="100">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
         </Canvas>
-        <Patch Id="UtJuhCKQv7eMg5YLnw8q6o" Name="Create" ParticipatingElements="Ed2drrkuWqRQdKK6mByqz6,B0Kjg241O7sNXGpJHVUZZh,EJrU5mg6Xh9LbyEXjBv6Q6" />
+        <Patch Id="UtJuhCKQv7eMg5YLnw8q6o" Name="Create" ParticipatingElements="Ed2drrkuWqRQdKK6mByqz6,B0Kjg241O7sNXGpJHVUZZh,THyHx9rXoS4OiZcZ0tYPTm" />
         <Patch Id="AU6PJovdmD0QcferR5RMTz" Name="Update" ParticipatingElements="TgudQEEslw4NoEdFvWLiEn" />
         <ProcessDefinition Id="D17cpK60BytPn3uaQi9OeD">
           <Fragment Id="PjOhk9g9agtLkJtbUD0aYM" Patch="UtJuhCKQv7eMg5YLnw8q6o" Enabled="true" />
@@ -203,18 +206,12 @@
         <Link Id="EpR1gZ8ggn8LChNKDapgfQ" Ids="URAzFI6SssnLgLPD7GSG0Y,KtADHGLknKrQMiY4ZJGp0a" />
         <Link Id="AMGbLdlcPUhOXMbADCLntG" Ids="RzAX0d6ha7bLMerhh5OXX4,UXyVsmbRwwHNLl8zVEPBr8" />
         <Link Id="B0Kjg241O7sNXGpJHVUZZh" Ids="E0PIK5pFrssQb9GvG46FRy,VIxO5VVjrLbMp5enilZwju" />
-        <Link Id="MTZm0BZYx5DPZohAHef4RG" Ids="GmU0GpGuTwMOp6luX7jDOU,VuLHmxjSGoBPFJfyTyzfFf" />
-        <Link Id="PECklf5fsbVPS3Bv5qQ2JQ" Ids="MVlSrBPkBw1OpGwou5sxRf,LinGitwaoKrPRKvY1DdEAV" />
-        <Link Id="EJrU5mg6Xh9LbyEXjBv6Q6" Ids="V6q6mdVo6rEPfACTtOVNOR,RXuGVUB3qW6NUdy5YolEVL" />
         <Link Id="TgudQEEslw4NoEdFvWLiEn" Ids="RXuGVUB3qW6NUdy5YolEVL,KXBWRJ87Uk5LRIoLhpbcs8" />
         <Link Id="DyPfaRXOdEAPHj5glRanqk" Ids="SkonwrZRsi4OiFBJRt5j71,HUcKmJ5D8SkQMMJ3bSamiK" />
         <Link Id="NgDwc0ly1l8P5ItdctJMvi" Ids="Eqnm8jD7ZgrLEjwFaAY3u7,HInu9RJTef0PCWHsumlIUT" />
         <Link Id="GJS3w0XuXpCLLy5s8YJbXX" Ids="QRArtfd6NdzOUeHOu6beRx,MkkZ9Qi2xqlOXyrDRr7SFf" />
         <Link Id="Mk2VRZGV5hVN3pWS4kWZzu" Ids="R1KGAp7PvByQCJKfwEEBGo,MGqR2LkEd2AMY9kv7Ajdho" />
         <Link Id="CiruuQZpgUiQRgEJSFTrEF" Ids="Vuskfqp1OG4P9NBYZTDaWI,OpA0zDFldePOUWxQtI6qKj" />
-        <Link Id="IqUEuVv9CaFMj4gUl8Ic6n" Ids="SOoJdIPB4HOM1G2smIb4Ab,M2aY3TG9is7QCQfJL7nJuw" />
-        <Link Id="GLjudGLezZ0MXmIQyDxy63" Ids="B4stOvbsTjSLotk9rPwmGD,BVkkyLrgjk2QDjUF4b6Mns" />
-        <Link Id="QHDH0UGuDmdLonI1FDnjxj" Ids="VIxO5VVjrLbMp5enilZwju,FyJGjUCHt7nLJCtctfmdUg" />
         <Link Id="A9ExK39bIpbNEfA2Z5NWBl" Ids="LN07HiUi4A6L8P8JdEpnou,B2EjAygMTAXO0nKu7iSFUI" />
         <Link Id="QiASC9yGXAiQZsoeRPlnFX" Ids="MVlSrBPkBw1OpGwou5sxRf,DXImGJxHPYAMxFnzDIN49u" />
         <Link Id="DOCnXIo2iG1OJJZkkxAMsh" Ids="IaulsG1teZXNcb2EQT8B63,KtWhmZCdCNFNd4DUM2ukIC" />
@@ -223,8 +220,16 @@
         <Link Id="T2C6geH0zOANnCEaPpDInM" Ids="RBWov1l2OiaNV5dlpbVnut,NDjkw4BZ6EiLgUKkDCIWPa" />
         <Link Id="SuQOwzv9zPtLrJINeCRyWR" Ids="QtYf4oxmGcDLS9UZwQiRBS,DtznpEe0zpNQDqxg73shkP" />
         <Link Id="VMcFVYEzJXmOjhY1gQyZ5F" Ids="VIxO5VVjrLbMp5enilZwju,DofUCejGpHwM3vlsWpV5PU" />
+        <Link Id="DtkKRKYjM0QMx6c1oxJZbM" Ids="P0oUcexdU4AM3QXRH1mowC,MiWWuBc3dm7OgGDbVFHjRF" />
+        <Link Id="GHECpXCcch4N9Cftg24XcF" Ids="MVlSrBPkBw1OpGwou5sxRf,HX5y8m7vWnINzussozU6Gh" />
+        <Link Id="K6jnp6LNY6VQKMYKXBCg5D" Ids="VIxO5VVjrLbMp5enilZwju,BKdvcHjFolHPyjNTNWk1hB" />
+        <Link Id="VIJodgR7yIVQU9Mk50hW2u" Ids="GmU0GpGuTwMOp6luX7jDOU,GP7FzFZx0DOM8aPrNp7QrI" />
+        <Link Id="THyHx9rXoS4OiZcZ0tYPTm" Ids="DTvQq82Ahu6LnfYDFbPOlR,RXuGVUB3qW6NUdy5YolEVL" />
+        <Link Id="TsM0t2FvQ8pOF0X8JkJ0yA" Ids="RXuGVUB3qW6NUdy5YolEVL,BVkkyLrgjk2QDjUF4b6Mns" />
+        <Link Id="Ak5dBC4ZwqrQZc0HaSAihL" Ids="SLqDlvsM7dZPr122o3R4Sw,V8jw6szBqe7L03A47yXGGa" />
+        <Link Id="IPAu0tbOPadLBZjJOdH0Rz" Ids="SLqDlvsM7dZPr122o3R4Sw,S9jWopuRz69QdLkYlpVtzO" />
       </Patch>
     </Node>
   </Patch>
-  <PlatformDependency Id="JNg9h9vJTFELykCIex3hbE" Location="./VL.Yoga.dll" />
+  <ProjectDependency Id="IweMfnVZnRgNFl97OZgVXm" Location="./src/VL.Yoga.csproj" />
 </Document>
