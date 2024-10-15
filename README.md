@@ -16,8 +16,6 @@ git clone
 build
 ```
 
-![image](files/Users/jzhang/Desktop/Isolated.png)
-
 ### Links
 https://www.yogalayout.dev/
 
