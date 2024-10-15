@@ -25,7 +25,7 @@ namespace VL.Yoga
                 var count = children.Count;
 
                 var childRefs = stackalloc YGNode*[count];
-                for (var i = 0; i < children.Count; i++)
+                for (var i = 0; i < count; i++)
                     childRefs[i] = children[i]._node;
 
                 Interop.YGNodeSetChildren(_node, childRefs, count);
