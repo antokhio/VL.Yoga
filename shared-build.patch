@@ -1,0 +1,20 @@
+Submodule yoga contains modified content
+diff --git a/yoga/yoga/CMakeLists.txt b/yoga/yoga/CMakeLists.txt
+index b6eca1ac..b824f090 100644
+--- a/yoga/yoga/CMakeLists.txt
++++ b/yoga/yoga/CMakeLists.txt
+@@ -22,7 +22,7 @@ file(GLOB SOURCES CONFIGURE_DEPENDS
+     ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp
+     ${CMAKE_CURRENT_SOURCE_DIR}/**/*.cpp)
+ 
+-add_library(yogacore STATIC ${SOURCES})
++add_library(yogacore SHARED ${SOURCES})
+ 
+ # Yoga conditionally uses <android/log> when building for Android
+ if (ANDROID)
+@@ -39,3 +39,5 @@ target_include_directories(yogacore
+     PUBLIC
+     $<BUILD_INTERFACE:${YOGA_ROOT}>
+     $<INSTALL_INTERFACE:${CMAKE_INSTALL_PREFIX}/include/yoga>)
++
++target_compile_options(yogacore PUBLIC /wd4251)
