@@ -1,4 +1,6 @@
-﻿namespace VL.Yoga
+﻿using VL.Lib.Collections;
+
+namespace VL.Yoga
 {
     public partial class YogaNode : IDisposable
     {
@@ -16,13 +18,18 @@
         public void RemoveChild(YogaNode excludedChild) { unsafe { Interop.YGNodeRemoveChild(_node, excludedChild._node); } }
         public void RemoveAllChildren() { unsafe { Interop.YGNodeRemoveAllChildren(_node); } }
 
-        // TODO: FIGURE OUT:
-        public void SetChildren(List<YogaNode> children, int count)
+        public void SetChildren(Spread<YogaNode> children)
         {
             unsafe
             {
-                throw new NotImplementedException();
-                // Interop.YGNodeSetChildren(children.Select(x => x._node).ToArray());
+                var count = children.Count;
+
+                var childRefs = stackalloc YGNode*[count];
+                for (var i = 0; i < children.Count; i++)
+                    childRefs[i] = children[i]._node;
+
+                Interop.YGNodeSetChildren(_node, childRefs, count);
+
             }
         }
 
