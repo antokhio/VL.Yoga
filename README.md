@@ -1,15 +1,22 @@
 # VL.Yoga (WIP)
 
-Repositiry contins https://github.com/facebook/yoga implementation for (https://visualprogramming.net/)[vvvv-gamma]
+Repositiry contins https://github.com/facebook/yoga implementation for [vvvv-gamma](https://visualprogramming.net/)
 
 ### This repo is in early WIP stage
+- [ ] Code cleanup
+- [ ] Nodes set
+- [ ] [Tests](https://github.com/facebook/yoga/tree/main/tests)
+- [ ] Nuget
+
+![test](https://github.com/antokhio/VL.Yoga/blob/develop/assets/test.jpg)
 
 ### Installation
 ```
-
+git clone
+build
 ```
 
-
+![image](files/Users/jzhang/Desktop/Isolated.png)
 
 ### Links
 https://www.yogalayout.dev/
