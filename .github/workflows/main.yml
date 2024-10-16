@@ -36,7 +36,7 @@ jobs:
       run: xcopy "out\Debug\*.dll" "lib\net8.0\" /h /i /c /k /e /r /y
     
     - name: Copy VL.Yoga.dll
-      run: xcopy "src\bin\Debug\net8.0\*.dll" "lib\net8.0\" /h /i /c /k /e /r /y
+      run: xcopy "src\bin\Release\net8.0\*.dll" "lib\net8.0\" /h /i /c /k /e /r /y
 
     - name: Publish VL Nuget
       uses: vvvv/PublishVLNuget@1.0.41
