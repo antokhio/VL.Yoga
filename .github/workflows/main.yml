@@ -24,14 +24,17 @@ jobs:
       uses: nuget/setup-nuget@v1
 
     - name: Apply patch
-      run: 'git apply --ignore-whitespace shared-build.patch'
+      run: git apply --ignore-whitespace shared-build.patch
 
     - name: Build yogacore
       uses: threeal/cmake-action@v2.0.0
       with:
         source-dir: yoga\yoga
-        build-dir: lib\net8.0\Release\net8.0
-      
+        build-dir: out
+    
+    #- name: XCopy
+    #  run: xcopy "out\Debug" "lib\net8.0\"
+
     - name: Publish VL Nuget
       uses: vvvv/PublishVLNuget@1.0.41
       with:
