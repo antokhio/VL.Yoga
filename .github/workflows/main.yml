@@ -32,8 +32,11 @@ jobs:
         source-dir: yoga\yoga
         build-dir: out
     
-    - name: XCopy
-      run: xcopy "out\Debug" "lib\net8.0\Release" /h /i /c /k /e /r /y
+    - name: Copy yogacore.dll
+      run: xcopy "out\Debug\*.dll" "lib\net8.0\" /h /i /c /k /e /r /y
+    
+    - name: Copy VL.Yoga.dll
+      run: xcopy "src\bin\Debug\net8.0\*.dll" "lib\net8.0\" /h /i /c /k /e /r /y
 
     - name: Publish VL Nuget
       uses: vvvv/PublishVLNuget@1.0.41
