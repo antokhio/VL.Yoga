@@ -7,6 +7,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Platforms>AnyCPU;x64</Platforms>
     <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>$(SolutionDir)\..\lib\</OutputPath>
     <BaseOutputPath></BaseOutputPath>
   </PropertyGroup>
 
