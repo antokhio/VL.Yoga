@@ -23,8 +23,7 @@ jobs:
     - name: Setup Nuget.exe
       uses: nuget/setup-nuget@v1
 
-    -name: Apply Patch
-      run: git apply --ignore-whitespace shared-build.patch
+    -run: git apply --ignore-whitespace shared-build.patch
 
     - name: Build yogacore
       uses: threeal/cmake-action@v2.0.0
