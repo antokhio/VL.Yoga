@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>VL.Yoga</id>
+    <version>0.0.10</version>
+    <title>VL.Yoga</title>
+    <authors>antokhio, bjorn</authors>
+    <owners>antokhio</owners>
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/antokhio/VL.Yoga</projectUrl>
+    <summary>https://github.com/facebook/yoga port to https://visualprogramming.net/</summary>
+    <description>Set of nodes to create flex layouts</description>
+    <copyright>Copyright © 2024 antokhio</copyright>
+    <tags>VL, vvvv, yoga</tags>
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+  </metadata>
+   <files>
+    <file src="..\out\Debug\yogacore.dll" target="lib\net8.0" />
+    <file src="..\lib\net8.0\Vl.Yoga.dll" target="lib\net8.0" />
+    <file src="..\*.vl"/>
+    <!-- <file src="..\help\*.vl" target="help"/> -->
+    <file src="..\README.md" />
+    <file src="..\LICENSE" />
+  </files>
+</package>
