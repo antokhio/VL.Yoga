@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>VL.Yoga</id>
-    <version>0.0.8</version>
+    <version>0.0.9</version>
     <title>VL.Yoga</title>
     <authors>antokhio, bjorn</authors>
     <owners>antokhio</owners>
@@ -14,6 +14,9 @@
     <description>Set of nodes to create flex layouts</description>
     <copyright>Copyright © 2024 antokhio</copyright>
     <tags>VL, vvvv, yoga</tags>
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
   </metadata>
    <files>
     <file src="..\out\Debug\yogacore.dll" target="lib\net8.0" />
