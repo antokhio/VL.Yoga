@@ -16,7 +16,7 @@
     <tags>VL, vvvv, yoga</tags>
   </metadata>
    <files>
-    <file src="..\lib\net8.0\yogacore.dll" target="lib\net8.0" />
+    <file src="..\out\Debug\yogacore.dll" target="lib\net8.0" />
     <file src="..\lib\Release\net8.0\Vl.Yoga.dll" target="lib\net8.0" />
     <file src="..\*.vl"/>
     <!-- <file src="..\help\*.vl" target="help"/> -->
