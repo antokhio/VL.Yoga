@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>VL.Yoga</id>
-    <version>0.0.6</version>
+    <version>0.0.7</version>
     <title>VL.Yoga</title>
     <authors>antokhio, bjorn</authors>
     <owners>antokhio</owners>
@@ -17,7 +17,7 @@
   </metadata>
    <files>
     <file src="..\out\Debug\yogacore.dll" target="lib\net8.0" />
-    <file src="..\lib\net8.0\Release\net8.0\VL.Yoga.dll" target="lib\net8.0" />
+    <file src="..\lib\Release\net8.0\Vl.Yoga.dll" target="lib\net8.0" />
     <file src="..\*.vl"/>
     <!-- <file src="..\help\*.vl" target="help"/> -->
     <file src="..\README.md" />
