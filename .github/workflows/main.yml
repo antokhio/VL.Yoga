@@ -4,7 +4,7 @@ name: push_release_nuget
 on:
   push:
     branches:
-      - feat/nuget
+      - develop
     paths-ignore:
       - README.md
 
@@ -12,32 +12,29 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-    - name: Git Checkout
-      uses: actions/checkout@master
-      with:
-        submodules: 'recursive'
+      - name: Git Checkout
+        uses: actions/checkout@master
+        with:
+          submodules: "recursive"
 
-    - name: Setup MSBuild.exe
-      uses: microsoft/setup-msbuild@v1
+      - name: Setup MSBuild.exe
+        uses: microsoft/setup-msbuild@v1
 
-    - name: Setup Nuget.exe
-      uses: nuget/setup-nuget@v1
+      - name: Setup Nuget.exe
+        uses: nuget/setup-nuget@v1
 
-    - name: Apply patch
-      run: git apply --ignore-whitespace shared-build.patch
+      - name: Apply patch
+        run: git apply --ignore-whitespace shared-build.patch
 
-    - name: Build yogacore
-      uses: threeal/cmake-action@v2.0.0
-      with:
-        source-dir: yoga\yoga
-        build-dir: out
-    
-    # - name: Copy yogacore.dll
-    #   run: xcopy "out\Debug\*.dll" "lib\net8.0\" /h /i /c /k /e /r /y
-    
-    - name: Publish VL Nuget
-      uses: vvvv/PublishVLNuget@1.0.41
-      with:
-        csproj: src\Vl.Yoga.csproj
-        nuspec: deployment\VL.Yoga.nuspec
-        nuget-key: ${{ secrets.NUGET_KEY }}
+      - name: Build yogacore
+        uses: threeal/cmake-action@v2.0.0
+        with:
+          source-dir: yoga\yoga
+          build-dir: out
+
+      - name: Publish VL Nuget
+        uses: vvvv/PublishVLNuget@1.0.41
+        with:
+          csproj: src\Vl.Yoga.csproj
+          nuspec: deployment\VL.Yoga.nuspec
+          nuget-key: ${{ secrets.NUGET_KEY }}
