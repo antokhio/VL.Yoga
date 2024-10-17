@@ -1,17 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Platforms>AnyCPU;x64</Platforms>
     <PlatformTarget>x64</PlatformTarget>
-    <BaseOutputPath>..\lib</BaseOutputPath>
+    <BaseOutputPath></BaseOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="VL.Core" Version="2024.6.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YogaSharp\YogaSharp\YogaSharp.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,8 +30,12 @@
     </None>
   </ItemGroup>
 
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="call $(ProjectDir)..\pre-build.cmd $(ProjectDir)..\" />
+  </Target>
+
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy &quot;.\..\lib\$(Configuration)\net8.0\*&quot; &quot;.\..\lib\net8.0&quot; /h /i /c /k /e /r /y&#xD;&#xA;rd /s /q &quot;.\..\lib\$(Configuration)&quot;" />
+    <Exec Command="echo $(TargetFramework)&#xD;&#xA;echo $(Configuration)&#xD;&#xA;echo $(Platform)&#xD;&#xA;call $(ProjectDir)..\post-build.cmd $(ProjectDir) $(Platform) $(Configuration) $(TargetFramework) &#xD;&#xA;" />
   </Target>
 
 </Project>

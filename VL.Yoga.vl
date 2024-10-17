@@ -5,406 +5,6 @@
     <Canvas Id="FruPQfWaAVEM14EdnKs6Xi" DefaultCategory="Yoga" CanvasType="FullCategory">
       <!--
 
-    ************************ YGSize ************************
-
--->
-      <Node Name="YGSize" Bounds="677,170" Id="C92n8p2ESaRPPE8NFSqvYW">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="VL.Yoga" LastDependency="VL.Yoga.dll">
-          <Choice Kind="TypeFlag" Name="YGSize" />
-        </p:TypeAnnotation>
-        <Patch Id="GiyksSaPuO9N30c0U4d5mI">
-          <Canvas Id="Bplb11pwQLqLowcW6juvnZ" CanvasType="Group">
-            <!--
-
-    ************************ FromVector2 ************************
-
--->
-            <Node Name="FromVector2" Bounds="304,86,112,82" Id="PdfDD9TIOnPQIbPVVi5Fw8">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" Name="Operation" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-              <Patch Id="KESfl52XDlDNmrT1PUDHcH">
-                <Node Bounds="316,118,75,19" AutoConnect="true" Id="Dz8u02acNZDPTh5lcAIxB3">
-                  <p:NodeReference LastCategoryFullName="VL.Yoga.YGSize" LastDependency="VL.Yoga.dll">
-                    <Choice Kind="OperationNode" Name="FromVector2" />
-                    <FullNameCategoryReference ID="VL.Yoga.YGSize" />
-                  </p:NodeReference>
-                  <Pin Id="FRTsVOfeXm7QZGYXdsDTWu" Name="Input" Kind="InputPin" />
-                  <Pin Id="BxGHOjTDOieNNvMjurqeNx" Name="Result" Kind="OutputPin" />
-                </Node>
-                <Pin Id="GTfTR1CNz0SProjOsZviwZ" Name="Input" Kind="InputPin" />
-                <Pin Id="JpjmVVcC46LLRRBFQr2uSD" Name="Result" Kind="OutputPin" />
-              </Patch>
-            </Node>
-            <!--
-
-    ************************ ToVector2 ************************
-
--->
-            <Node Name="ToVector2" Bounds="304,236,112,82" Id="FcFNMchdWkPP1DeF0dfFQe">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" Name="Operation" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-              <Patch Id="DRXxUtmwX2RMPrHsOzXe2c">
-                <Node Bounds="316,268,63,19" AutoConnect="true" Id="LBLtbTP4eDDL6dnyEH3mP6">
-                  <p:NodeReference LastCategoryFullName="VL.Yoga.YGSize" LastDependency="VL.Yoga.dll">
-                    <Choice Kind="OperationNode" Name="ToVector2" />
-                    <FullNameCategoryReference ID="VL.Yoga.YGSize" />
-                  </p:NodeReference>
-                  <Pin Id="AKzdctv4N50N8oCLnpRBNa" Name="Input" Kind="InputPin" />
-                  <Pin Id="SFWNwdfnbqZQMSY7nej8yb" Name="Result" Kind="OutputPin" />
-                </Node>
-                <Pin Id="LC717MDqWFTQGotukV1V5B" Name="Input" Kind="InputPin" />
-                <Pin Id="IIBFBc4pjVwNCRKcIci3hv" Name="Result" Kind="OutputPin" />
-              </Patch>
-            </Node>
-            <!--
-
-    ************************ height ************************
-
--->
-            <Node Name="height" Bounds="541,103,118,80" Id="Sc0Zyr13KkyMWUtS9bAY8d">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" Name="Operation" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-              <Patch Id="DeXOY8kb5GFOLZNruON5LQ">
-                <Node Bounds="559,132,45,26" AutoConnect="true" Id="RutAPwc6gleLoFGFEyDXVz">
-                  <p:NodeReference LastCategoryFullName="VL.Yoga.YGSize" LastDependency="VL.Yoga.dll">
-                    <Choice Kind="OperationNode" Name="height" />
-                    <FullNameCategoryReference ID="VL.Yoga.YGSize" />
-                  </p:NodeReference>
-                  <Pin Id="Acs82bhvlhBL5IUmoreiNU" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="HtFXprWcy8cQd9qubhSr0f" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="VJKH7YmgbA8OwPs0WbnlJO" Name="Height" Kind="OutputPin" />
-                </Node>
-                <Pin Id="OYb6UFgQdUUO8vlJLlmYc1" Name="Input" Kind="InputPin" />
-                <Pin Id="Ok50clssEavLdw6dpIS5Od" Name="Output" Kind="OutputPin" />
-                <Pin Id="UTD0PgtjgumMMd9cOudNu8" Name="Height" Kind="OutputPin" />
-              </Patch>
-            </Node>
-            <!--
-
-    ************************ Setheight ************************
-
--->
-            <Node Name="Setheight" Bounds="827,103,112,80" Id="K1hkJNCCaduO9J0i7V2rwZ">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" Name="Operation" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-              <Patch Id="MtX4750EftjP7IB4dkvKiX">
-                <Node Bounds="839,132,59,26" AutoConnect="true" Id="PLiYw2YvLopObpbvtpxBho">
-                  <p:NodeReference LastCategoryFullName="VL.Yoga.YGSize" LastDependency="VL.Yoga.dll">
-                    <Choice Kind="OperationNode" Name="Setheight" />
-                    <FullNameCategoryReference ID="VL.Yoga.YGSize" />
-                  </p:NodeReference>
-                  <Pin Id="CgW0VT9QLUQNrLCSrPrtBd" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="BA5VIhPm2V5PcZ31bG2dd1" Name="Value" Kind="InputPin" />
-                  <Pin Id="Psfen8EWn9QN3HaTq8PYhH" Name="Output" Kind="StateOutputPin" />
-                </Node>
-                <Pin Id="LyRB4IfJdwLNpVJtp68oAQ" Name="Input" Kind="InputPin" />
-                <Pin Id="GzG4q3Gq0cGNgmVhG6vhOe" Name="Value" Kind="InputPin" />
-                <Pin Id="VVyw9Ue3dxNLMq70vIhVlT" Name="Output" Kind="OutputPin" />
-              </Patch>
-            </Node>
-            <!--
-
-    ************************ width ************************
-
--->
-            <Node Name="width" Bounds="540,253,119,80" Id="EraOXkwVOnEQYcx9uo32DD">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" Name="Operation" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-              <Patch Id="KG4xYbxlwOUOmZ6DNzmED3">
-                <Node Bounds="559,282,42,26" AutoConnect="true" Id="M1zDH4LBKVdNEuD7YRGkRZ">
-                  <p:NodeReference LastCategoryFullName="VL.Yoga.YGSize" LastDependency="VL.Yoga.dll">
-                    <Choice Kind="OperationNode" Name="width" />
-                    <FullNameCategoryReference ID="VL.Yoga.YGSize" />
-                  </p:NodeReference>
-                  <Pin Id="Mxz3xe7Z1W9L0pHDeDefQw" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="P88zecvmOPwMApHsHIlyOL" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="EOY2RNJWJfeLDG3Do4JHm6" Name="Width" Kind="OutputPin" />
-                </Node>
-                <Pin Id="D8K6KKXNYXOOX3i9o8NpLf" Name="Input" Kind="InputPin" />
-                <Pin Id="TJqBB14HYWzMeVl0zZgDL9" Name="Output" Kind="OutputPin" />
-                <Pin Id="TENsbAjV8IfQUG1vjHdA09" Name="Width" Kind="OutputPin" />
-              </Patch>
-            </Node>
-            <!--
-
-    ************************ Setwidth ************************
-
--->
-            <Node Name="Setwidth" Bounds="826,253,112,80" Id="QoqkoQ8zFARPhvIQzMUg5h">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" Name="Operation" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-              <Patch Id="OMvMFdLBw6sNw76AUsnzMr">
-                <Node Bounds="839,282,55,26" AutoConnect="true" Id="H9ZWB0Ox82mO8yFwjna7jN">
-                  <p:NodeReference LastCategoryFullName="VL.Yoga.YGSize" LastDependency="VL.Yoga.dll">
-                    <Choice Kind="OperationNode" Name="Setwidth" />
-                    <FullNameCategoryReference ID="VL.Yoga.YGSize" />
-                  </p:NodeReference>
-                  <Pin Id="NLBFKe5lPSIMXNzlil7zXi" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="TMduRTQFGB0LgbQp0RT269" Name="Value" Kind="InputPin" />
-                  <Pin Id="PdSeIIcLdaZOK7sn9emtfp" Name="Output" Kind="StateOutputPin" />
-                </Node>
-                <Pin Id="QimNMARhSSgM49MiQLsFij" Name="Input" Kind="InputPin" />
-                <Pin Id="MnMn5OX9cqqMFFiLFzdXj3" Name="Value" Kind="InputPin" />
-                <Pin Id="VVGKxSnx6OZQO1ZeMbK7KO" Name="Output" Kind="OutputPin" />
-              </Patch>
-            </Node>
-          </Canvas>
-          <ProcessDefinition Id="BCy4X4bRHVtPFF6rbOVnKZ" IsHidden="true">
-            <Fragment Id="QtspcjGO4uuMfBBM6F4pR1" Patch="PdfDD9TIOnPQIbPVVi5Fw8" />
-            <Fragment Id="NSDRWZCGF7UOioXxHzbxnf" Patch="FcFNMchdWkPP1DeF0dfFQe" />
-            <Fragment Id="Jb6ayPGZtFhNi1dcuXjK6c" Patch="Sc0Zyr13KkyMWUtS9bAY8d" />
-            <Fragment Id="P0GSKpj8iMrLqr4ANKcFap" Patch="K1hkJNCCaduO9J0i7V2rwZ" />
-            <Fragment Id="GjxK0EtK4BpLAhXnwOirie" Patch="EraOXkwVOnEQYcx9uo32DD" />
-            <Fragment Id="EIKjfLHa5s4Ptnmeidi3K1" Patch="QoqkoQ8zFARPhvIQzMUg5h" />
-          </ProcessDefinition>
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ YGValue ************************
-
--->
-      <Node Name="YGValue" Bounds="858,170" Id="JQLPfAuznlzQD7xnhRBCJs">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="VL.Yoga" LastDependency="VL.Yoga.dll">
-          <Choice Kind="TypeFlag" Name="YGValue" />
-        </p:TypeAnnotation>
-        <Patch Id="H15oNlZAm75QAdNFVlpRHk">
-          <Canvas Id="LXvYKp9uZhnNFErO1KI9x0" CanvasType="Group">
-            <!--
-
-    ************************ Auto ************************
-
--->
-            <Node Name="Auto" Bounds="295,65,121,82" Id="OfXHGhteXl3L6jV3RcACB0">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" Name="Operation" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-              <Patch Id="THTQ5amfbOKOTwFu6hVCvy">
-                <Node Bounds="316,97,38,19" AutoConnect="true" Id="JqP1CbjhzTgPUq6HmIf1Vk">
-                  <p:NodeReference LastCategoryFullName="VL.Yoga.YGValue" LastDependency="VL.Yoga.dll">
-                    <Choice Kind="OperationNode" Name="Auto" />
-                    <FullNameCategoryReference ID="VL.Yoga.YGValue" />
-                  </p:NodeReference>
-                  <Pin Id="UmRpG5ijUUzOj4uQk16XmI" Name="Auto" Kind="OutputPin" />
-                </Node>
-                <Pin Id="JMbSakewhvJOdCcybJcDWr" Name="Auto" Kind="OutputPin" />
-              </Patch>
-            </Node>
-            <!--
-
-    ************************ Undefined ************************
-
--->
-            <Node Name="Undefined" Bounds="304,215,112,82" Id="OKnrVf6kyEhOhEZqm3Cug0">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" Name="Operation" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-              <Patch Id="Fm6nJ9TRzLRMjtKBFA5KMG">
-                <Node Bounds="316,247,63,19" AutoConnect="true" Id="JhTfLQ3CYudPuRliDDE6or">
-                  <p:NodeReference LastCategoryFullName="VL.Yoga.YGValue" LastDependency="VL.Yoga.dll">
-                    <Choice Kind="OperationNode" Name="Undefined" />
-                    <FullNameCategoryReference ID="VL.Yoga.YGValue" />
-                  </p:NodeReference>
-                  <Pin Id="PWsgoYZiFPYLKqYB9SNjoZ" Name="Undefined" Kind="OutputPin" />
-                </Node>
-                <Pin Id="FaMJQqSyH7MMk4AtmTH8cS" Name="Undefined" Kind="OutputPin" />
-              </Patch>
-            </Node>
-            <!--
-
-    ************************ FromSingle ************************
-
--->
-            <Node Name="FromSingle" Bounds="507,57,112,82" Id="CbBZQ8EKm4rQZ7IjgtAduX">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" Name="Operation" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-              <Patch Id="E21k62cX2bcMMp2lJPYT1W">
-                <Node Bounds="519,89,67,19" AutoConnect="true" Id="PD7ZUbilrKWNEqsNJDXlsO">
-                  <p:NodeReference LastCategoryFullName="VL.Yoga.YGValue" LastDependency="VL.Yoga.dll">
-                    <Choice Kind="OperationNode" Name="FromSingle" />
-                    <FullNameCategoryReference ID="VL.Yoga.YGValue" />
-                  </p:NodeReference>
-                  <Pin Id="EYNsHkOmF64LCAsbKccYIX" Name="Input" Kind="InputPin" />
-                  <Pin Id="OyuwoRCcN5fLb4nQgXIYhq" Name="Result" Kind="OutputPin" />
-                </Node>
-                <Pin Id="TIKIwsfjNDAN1W66RVP36J" Name="Input" Kind="InputPin" />
-                <Pin Id="QAla4JaEcWlLkXUfKBUeAK" Name="Result" Kind="OutputPin" />
-              </Patch>
-            </Node>
-            <!--
-
-    ************************ Percent ************************
-
--->
-            <Node Name="Percent" Bounds="504,207,115,82" Id="Hp80V2yvnvmPUUHCEeUS11">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" Name="Operation" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-              <Patch Id="NOOv9SlAAzjLx9YF0V096p">
-                <Node Bounds="519,239,50,19" AutoConnect="true" Id="Rdt4OWdgPveNxPLSPQPuYz">
-                  <p:NodeReference LastCategoryFullName="VL.Yoga.YGValue" LastDependency="VL.Yoga.dll">
-                    <Choice Kind="OperationNode" Name="Percent" />
-                    <FullNameCategoryReference ID="VL.Yoga.YGValue" />
-                  </p:NodeReference>
-                  <Pin Id="DLymvBGBmoCMJJMGXDRLVP" Name="Value" Kind="InputPin" />
-                  <Pin Id="CTSJ8trfoAKM8PbTXbbJXz" Name="Result" Kind="OutputPin" />
-                </Node>
-                <Pin Id="HSnbqjJw2gDPnUtYtdn4xm" Name="Value" Kind="InputPin" />
-                <Pin Id="PsqSvO7jrISNFOa1m7WFu5" Name="Result" Kind="OutputPin" />
-              </Patch>
-            </Node>
-            <!--
-
-    ************************ Point ************************
-
--->
-            <Node Name="Point" Bounds="498,357,120,82" Id="My4AIzXAqbEOHGpypVzOli">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" Name="Operation" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-              <Patch Id="TQU68zU8BysOBiuJ7616Xk">
-                <Node Bounds="519,389,39,19" AutoConnect="true" Id="KmlLxaMpecSPc6SE3xtvqz">
-                  <p:NodeReference LastCategoryFullName="VL.Yoga.YGValue" LastDependency="VL.Yoga.dll">
-                    <Choice Kind="OperationNode" Name="Point" />
-                    <FullNameCategoryReference ID="VL.Yoga.YGValue" />
-                  </p:NodeReference>
-                  <Pin Id="JLlsa65gVM3NcoqKEXb6uv" Name="Value" Kind="InputPin" />
-                  <Pin Id="ECP5lCVXdPVMXSuOkGxuGM" Name="Result" Kind="OutputPin" />
-                </Node>
-                <Pin Id="TYhCmtiBYIEMuXEBMjJium" Name="Value" Kind="InputPin" />
-                <Pin Id="J3gpPuvsD6gMHZJe8hUopU" Name="Result" Kind="OutputPin" />
-              </Patch>
-            </Node>
-            <!--
-
-    ************************ Setunit ************************
-
--->
-            <Node Name="Setunit" Bounds="883,58,116,80" Id="MxMLUNkGBusLhjyLmPCAEb">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" Name="Operation" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-              <Patch Id="B1C8cHGULybNRPwuwE4CRK">
-                <Node Bounds="899,87,48,26" AutoConnect="true" Id="OotO33bBQ3nPWth6kKiQny">
-                  <p:NodeReference LastCategoryFullName="VL.Yoga.YGValue" LastDependency="VL.Yoga.dll">
-                    <Choice Kind="OperationNode" Name="Setunit" />
-                    <FullNameCategoryReference ID="VL.Yoga.YGValue" />
-                  </p:NodeReference>
-                  <Pin Id="SleD4rKUcbvOmm6gJ4f55K" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="ViMByxwHlpdNxcV2lA2dU3" Name="Value" Kind="InputPin" />
-                  <Pin Id="CMJnEEJBsIfLGJ9EufLHYl" Name="Output" Kind="StateOutputPin" />
-                </Node>
-                <Pin Id="OsQPA8HuQ50L4QtUe1Zcx8" Name="Input" Kind="InputPin" />
-                <Pin Id="R7ttGRK2p48OeBB7Yso4fr" Name="Value" Kind="InputPin" />
-                <Pin Id="QU407zGeeITQZmB7kftdk0" Name="Output" Kind="OutputPin" />
-              </Patch>
-            </Node>
-            <!--
-
-    ************************ Setvalue ************************
-
--->
-            <Node Name="Setvalue" Bounds="886,208,113,80" Id="UhR7ejC3JZLODFluCcCzgg">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" Name="Operation" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-              <Patch Id="KxjUeg3m20YPJcl4XuueIJ">
-                <Node Bounds="899,237,54,26" AutoConnect="true" Id="HPmn44j9oYUNMuspw5lAsX">
-                  <p:NodeReference LastCategoryFullName="VL.Yoga.YGValue" LastDependency="VL.Yoga.dll">
-                    <Choice Kind="OperationNode" Name="Setvalue" />
-                    <FullNameCategoryReference ID="VL.Yoga.YGValue" />
-                  </p:NodeReference>
-                  <Pin Id="R1Z5YyADhXNP9H4CHaNNKN" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="UGtP8pekyN0LJ4YsPveqmF" Name="Value" Kind="InputPin" />
-                  <Pin Id="RLwsUcnfS6DLcozuHsDgKC" Name="Output" Kind="StateOutputPin" />
-                </Node>
-                <Pin Id="M3Ydrr4M6mlLkl0VEGRo4p" Name="Input" Kind="InputPin" />
-                <Pin Id="EvZ2r4Ae78CNhuVtNvfPcT" Name="Value" Kind="InputPin" />
-                <Pin Id="PWrPRcGAtYePeQxMX3jyDr" Name="Output" Kind="OutputPin" />
-              </Patch>
-            </Node>
-            <!--
-
-    ************************ ToString ************************
-
--->
-            <Node Name="ToString" Bounds="893,364,112,80" Id="MrpHunNdqv3P8Sk3Mj8Teq">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" Name="Operation" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-              <Patch Id="GwtW1KXQ9vHMovmgsPbzpw">
-                <Node Bounds="906,393,55,26" AutoConnect="true" Id="FdPMLGgnVNJOEz42FgXlqA">
-                  <p:NodeReference LastCategoryFullName="VL.Yoga.YGValue" LastDependency="VL.Yoga.dll">
-                    <Choice Kind="OperationNode" Name="ToString" />
-                    <FullNameCategoryReference ID="VL.Yoga.YGValue" />
-                  </p:NodeReference>
-                  <Pin Id="D2TuDtqxYPJMvIEcJkFVfn" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="JD23mfpOI9kLO1H1b5SUB3" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="ET4OGp7gfThMcIrMgvpT3V" Name="Result" Kind="OutputPin" />
-                </Node>
-                <Pin Id="Bb2vemuEJRGP5eQQ8ARPAa" Name="Input" Kind="InputPin" />
-                <Pin Id="Ui4YH7jLia5NMFpmM5Cdmp" Name="Output" Kind="OutputPin" />
-                <Pin Id="CFTwMr7mgGuPB2SUu06rIl" Name="Result" Kind="OutputPin" />
-              </Patch>
-            </Node>
-          </Canvas>
-          <ProcessDefinition Id="J4q1gEMzuN7PfLpI83FJrc" IsHidden="true">
-            <Fragment Id="Eo08kTvU4apMXLmeFiFOJU" Patch="OfXHGhteXl3L6jV3RcACB0" />
-            <Fragment Id="GMOf9YOzYghNAhiAqx5HAr" Patch="OKnrVf6kyEhOhEZqm3Cug0" />
-            <Fragment Id="CFn0ROtfeONMXjLo3eSzeE" Patch="CbBZQ8EKm4rQZ7IjgtAduX" />
-            <Fragment Id="Jj50A7dNfLhLrqiO1DCkNp" Patch="Hp80V2yvnvmPUUHCEeUS11" />
-            <Fragment Id="IAYLrusLJdwMjDZZN9pyR1" Patch="My4AIzXAqbEOHGpypVzOli" />
-            <Fragment Id="AzyNbZplXWWMJ8SB5ugtFJ" Patch="MxMLUNkGBusLhjyLmPCAEb" />
-            <Fragment Id="T7nh22H9VhvObPQmjxkcgF" Patch="UhR7ejC3JZLODFluCcCzgg" />
-            <Fragment Id="VX276nRlARjOXyWsVImti7" Patch="MrpHunNdqv3P8Sk3Mj8Teq" />
-          </ProcessDefinition>
-        </Patch>
-      </Node>
-      <!--
-
     ************************ YogaConfig ************************
 
 -->
@@ -3691,6 +3291,809 @@
           </ProcessDefinition>
         </Patch>
       </Node>
+      <!--
+
+    ************************ YGSize ************************
+
+-->
+      <Node Name="YGSize" Bounds="715,171" Id="S7zAulQdhocPTezSeYrVlC">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="YogaSharp" LastDependency="YogaSharp.dll">
+          <Choice Kind="TypeFlag" Name="YGSize" />
+        </p:TypeAnnotation>
+        <Patch Id="NmnNe2bgfP8LfrNLst0yBz">
+          <Canvas Id="Vkow1sPDRm8QQLlZoNLL9n" CanvasType="Group">
+            <!--
+
+    ************************ = ************************
+
+-->
+            <Node Name="=" Bounds="318,60,128,82" Id="Rp1qX0VIazwM9xx4ezoaJu">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="GsR0wdRTVhgLgQXQjE7IbB">
+                <Node Bounds="345,92,25,19" AutoConnect="true" Id="RSiQHm7FNbELLhtsCUCQfC">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGSize" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="=" />
+                    <FullNameCategoryReference ID="YogaSharp.YGSize" />
+                  </p:NodeReference>
+                  <Pin Id="QCHwbN94R5KOJff3hnTgtS" Name="Input" Kind="InputPin" />
+                  <Pin Id="Mg5x4rNhZlKNTW9FaxaeeH" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="FDeKJw7VXGqNgcMobUKwhq" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="CeffbHbTjVyQS1qvrY8lmR" Name="Input" Kind="InputPin" />
+                <Pin Id="P9ZoD9QOzHgNjHa5JCQuht" Name="Input 2" Kind="InputPin" />
+                <Pin Id="KWeCxxF3yDKP7zh444bALW" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ FromVector2 ************************
+
+-->
+            <Node Name="FromVector2" Bounds="613,60,112,82" Id="JKMXK8Sk8s0LXOEgRlXa9U">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="Jc0d5suAYLZQbQvclgpXIj">
+                <Node Bounds="625,92,75,19" AutoConnect="true" Id="PQ00yP5EGVDOuJm9pWTDke">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGSize" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="FromVector2" />
+                    <FullNameCategoryReference ID="YogaSharp.YGSize" />
+                  </p:NodeReference>
+                  <Pin Id="KwaWujd4rWbN743OxccUib" Name="Input" Kind="InputPin" />
+                  <Pin Id="IT4n2KUHYEmNjSJlbCCpCz" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="Pq8tRUxOJVrPntEuKdkjZf" Name="Input" Kind="InputPin" />
+                <Pin Id="UFuuAhpccFKMUzQOTX6OUp" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ ToVector2 ************************
+
+-->
+            <Node Name="ToVector2" Bounds="333,210,112,82" Id="CAtjUpqZP9OP27Wfc4VPTr">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="QYmjBc2LfrWNkJKZ8FrDYt">
+                <Node Bounds="345,242,63,19" AutoConnect="true" Id="CQYhU87Qp7iPtv0Q0WEjk5">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGSize" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="ToVector2" />
+                    <FullNameCategoryReference ID="YogaSharp.YGSize" />
+                  </p:NodeReference>
+                  <Pin Id="Bdmoum8fHfjM5LJc06xeHt" Name="Input" Kind="InputPin" />
+                  <Pin Id="CAnKeDrbEZvL6AUeNZ2ftD" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="IimczilG1YHLlg98PoG1Fy" Name="Input" Kind="InputPin" />
+                <Pin Id="V6yWsyuTXUSLYNcNoHTSKP" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ != ************************
+
+-->
+            <Node Name="!=" Bounds="598,210,126,82" Id="Kq76AOcgEVbOwQ3rKxYn3s">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="CqhC7pQZ0r7MUgdFvLqIFF">
+                <Node Bounds="625,242,27,19" AutoConnect="true" Id="O4Dn2c5QkZTNF7rYWwZ71K">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGSize" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="!=" />
+                    <FullNameCategoryReference ID="YogaSharp.YGSize" />
+                  </p:NodeReference>
+                  <Pin Id="RVHQcdybeRCOcZcfps2jf1" Name="Input" Kind="InputPin" />
+                  <Pin Id="TcUZG7VDCBkOHqGssYYaGt" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="OmoWtT34pIeNpQXsFA9p8x" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="SwUoQ7XJEm4O5qCqX1DxsO" Name="Input" Kind="InputPin" />
+                <Pin Id="M4gBwRFA74hQXPsYHkx4ss" Name="Input 2" Kind="InputPin" />
+                <Pin Id="QbHbUVzvB4fLib8ZrOEzY1" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ Height ************************
+
+-->
+            <Node Name="Height" Bounds="319,326,117,80" Id="NMBYGjoBHfSLiizFlcUoSY">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="IiuJNhrl7uMOiqdAkT3vqw">
+                <Node Bounds="336,355,46,26" AutoConnect="true" Id="H3QYEWA9ZGTQadsUwDJZki">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGSize" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="Height" />
+                    <FullNameCategoryReference ID="YogaSharp.YGSize" />
+                  </p:NodeReference>
+                  <Pin Id="VFIzLWMAhrbMNIXgVQIp7s" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="QR8Avn2ilGLLT6jpojpYyO" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="E7bdADVIf8UNeRGkXQaYki" Name="Height" Kind="OutputPin" />
+                </Node>
+                <Pin Id="JAGxuheUZPjLs7gleGaGDy" Name="Input" Kind="InputPin" />
+                <Pin Id="IcMziqFqDznMANDEdqSzTA" Name="Output" Kind="OutputPin" />
+                <Pin Id="VLT5Hsms38jNLEVqmaKwmq" Name="Height" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ SetHeight ************************
+
+-->
+            <Node Name="SetHeight" Bounds="604,326,112,80" Id="AUzaiCQWJ4IPypFosPEYQh">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="O1x6lcEJK7gPpHqstVqR9i">
+                <Node Bounds="616,355,60,26" AutoConnect="true" Id="IKfL8zhafOFP7VE7hWXV6V">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGSize" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="SetHeight" />
+                    <FullNameCategoryReference ID="YogaSharp.YGSize" />
+                  </p:NodeReference>
+                  <Pin Id="O4J0FTahoyPNFEv5i0XX3t" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="TNQG8c29bDrPQXdR7unOQj" Name="Value" Kind="InputPin" />
+                  <Pin Id="QL4sYn7OgixLVwD7iRMn0x" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Pin Id="DKC1OtPBEgxQMjJNDdaLfn" Name="Input" Kind="InputPin" />
+                <Pin Id="RMjIbWU58LyPGae7x81yh2" Name="Value" Kind="InputPin" />
+                <Pin Id="DqV9KBbNUX5NmcAD8O9Wpq" Name="Output" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ Width ************************
+
+-->
+            <Node Name="Width" Bounds="317,476,119,80" Id="RMlVKYGNdgVPKyv0Y0Xujf">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="GROl96lCOaGMjIzl6ROA9w">
+                <Node Bounds="336,505,42,26" AutoConnect="true" Id="VcQnsaGkNfQQMgTsYivl0L">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGSize" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="Width" />
+                    <FullNameCategoryReference ID="YogaSharp.YGSize" />
+                  </p:NodeReference>
+                  <Pin Id="Qv5gdD89BneOXEdD7G5HFI" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="UVxlMiBIB2eP52ir64bzu4" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="LOEmCcdNjqnP0RimXWg46l" Name="Width" Kind="OutputPin" />
+                </Node>
+                <Pin Id="LGoW4CSVfS1N2g9E1cqIPf" Name="Input" Kind="InputPin" />
+                <Pin Id="OU4B4bjNs0WLVTQX4NEGye" Name="Output" Kind="OutputPin" />
+                <Pin Id="LF9ITVvEn4nO3NElYypVuF" Name="Width" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ SetWidth ************************
+
+-->
+            <Node Name="SetWidth" Bounds="604,476,112,80" Id="Eo51DIl7lpGPlxcFMwyG5h">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="RP8ZXxUtb9gQJCwZFVhOEi">
+                <Node Bounds="616,505,56,26" AutoConnect="true" Id="Kg95cwM69YOOwWOeOWt9JK">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGSize" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="SetWidth" />
+                    <FullNameCategoryReference ID="YogaSharp.YGSize" />
+                  </p:NodeReference>
+                  <Pin Id="FSupeUuZB8lNhMTS9t3OeU" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="ROnUvvoywoMM3PfWcu0KnX" Name="Value" Kind="InputPin" />
+                  <Pin Id="M6UJV991RLWLRORhBBsjJ3" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Pin Id="UuU3vAWvHc7M7vyXPUEiku" Name="Input" Kind="InputPin" />
+                <Pin Id="E6EErPJ6YysM1af77y5COu" Name="Value" Kind="InputPin" />
+                <Pin Id="FrSmTNwRwQKNtQcrJK88ou" Name="Output" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ Equals ************************
+
+-->
+            <Node Name="Equals" Bounds="825,67,117,80" Id="DVODUWgWuSdN4vjSCndQtJ">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="JVrP0MxmE3IPSbSXAn2jV1">
+                <Node Bounds="842,96,46,26" AutoConnect="true" Id="UF5blGlvWMxPInOgZDdjgq">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGSize" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="Equals" />
+                    <FullNameCategoryReference ID="YogaSharp.YGSize" />
+                  </p:NodeReference>
+                  <Pin Id="B4dRghyxDFGPctTyFxL6Ka" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="CPmtYyiScUoK909BW2Z9TW" Name="Obj" Kind="InputPin" />
+                  <Pin Id="SqaNp7TdpUoPK09xaUo5s7" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="AXTztjO8UO1PUTiLocHb8w" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="Ig4Txqyy8mRLAu9oKcpRI4" Name="Input" Kind="InputPin" />
+                <Pin Id="PO2SAxaqM5fM5R3apTPvYd" Name="Obj" Kind="InputPin" />
+                <Pin Id="NsrQyBrOhEmMTlowiSBhU3" Name="Output" Kind="OutputPin" />
+                <Pin Id="EWGpw1WoMMpMFUooP40dNh" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ GetHashCode ************************
+
+-->
+            <Node Name="GetHashCode" Bounds="830,217,112,80" Id="Sxsa7kbwJLPOPXZiJnDGfq">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="KZgJrg2Le35OkfFs8QBU45">
+                <Node Bounds="842,246,78,26" AutoConnect="true" Id="LdJ5UPhA6wSOcFLUL5NFh6">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGSize" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="GetHashCode" />
+                    <FullNameCategoryReference ID="YogaSharp.YGSize" />
+                  </p:NodeReference>
+                  <Pin Id="T6zdAFl8IHnLbGeLqQSo94" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="GSC5pdzvrgHMeZkcGwgIr3" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="U95zskw9YgXP9YuwEad2NP" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="IKh1oQQExNFNQ4ERXLaHpn" Name="Input" Kind="InputPin" />
+                <Pin Id="PHlATOybWnwPoe2gicRhX0" Name="Output" Kind="OutputPin" />
+                <Pin Id="CweP0FDYZvsQHaTJhfV0zU" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ ToString ************************
+
+-->
+            <Node Name="ToString" Bounds="829,367,112,80" Id="PmJG3WGG4RTP0tOOH6iGXB">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="Cl1AyRsqipAQPuXbAO5LsO">
+                <Node Bounds="842,396,55,26" AutoConnect="true" Id="Pd0RUKPC3aCN89bccFCFk6">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGSize" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="ToString" />
+                    <FullNameCategoryReference ID="YogaSharp.YGSize" />
+                  </p:NodeReference>
+                  <Pin Id="DICh5LYhngRNQnWapxdfmL" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="FrDaUlTZuoUMK01uIbbEfD" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="FBBu6UYD0tnN2S29E85oLi" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="DWSO0KzVOoRN59JITaxcon" Name="Input" Kind="InputPin" />
+                <Pin Id="AM2SDzRvxS1L146dTgffyY" Name="Output" Kind="OutputPin" />
+                <Pin Id="Bq18iPCcBJ4Ls89aMp5aEz" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ Vector2 ************************
+
+-->
+            <Node Name="Vector2" Bounds="1015,226,114,82" Id="D7AxJx9IFAKNEPIlvZ8B0L">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="Sv3b3l8U7GvNBiAP7IlilB">
+                <Node Bounds="1029,258,52,19" AutoConnect="true" Id="R39m6fsV6G3MpF6HX3bwr9">
+                  <p:NodeReference LastCategoryFullName="VL.Yoga.Extensions" LastDependency="VL.Yoga.dll">
+                    <Choice Kind="OperationNode" Name="Vector2" />
+                    <FullNameCategoryReference ID="VL.Yoga.Extensions" />
+                  </p:NodeReference>
+                  <Pin Id="AWiRdggl9HRMEVkQbQiA3N" Name="Size" Kind="InputPin" />
+                  <Pin Id="TG8CGH65xU7QJm638BobbE" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="UR3K6YXX4hvOrBIh0KGOYV" Name="Size" Kind="InputPin" />
+                <Pin Id="PSkO9Z2Gy2cNbwVxnpdFTf" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ YGSize ************************
+
+-->
+            <Node Name="YGSize" Bounds="1012,376,116,82" Id="VYmaxdcVJnALqPNDLGyMy0">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="J1x1kdJQOpvLyl8OQBbwrV">
+                <Node Bounds="1029,408,47,19" AutoConnect="true" Id="MSavloRiKzCPCOC1o4URJE">
+                  <p:NodeReference LastCategoryFullName="VL.Yoga.Extensions" LastDependency="VL.Yoga.dll">
+                    <Choice Kind="OperationNode" Name="YGSize" />
+                    <FullNameCategoryReference ID="VL.Yoga.Extensions" />
+                  </p:NodeReference>
+                  <Pin Id="CfuVrnP6Df4Mkxf24pgODO" Name="Size" Kind="InputPin" />
+                  <Pin Id="CPmIUycJ5ZZN4ElDEozNaq" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="AZMxNSOY80ZOHyfzARgrGS" Name="Size" Kind="InputPin" />
+                <Pin Id="KmQTd1y1YmgOUIVCQm9yXZ" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+          </Canvas>
+          <ProcessDefinition Id="UobX5bKSaKIMT0Wr1BT7B7" IsHidden="true">
+            <Fragment Id="CnjhoZ8uocpLYBfTvRThnF" Patch="Rp1qX0VIazwM9xx4ezoaJu" />
+            <Fragment Id="GlgFtOG3ehnNnyp8rUEjku" Patch="JKMXK8Sk8s0LXOEgRlXa9U" />
+            <Fragment Id="GPh49bgndVTNuA5ECIhVlv" Patch="CAtjUpqZP9OP27Wfc4VPTr" />
+            <Fragment Id="VcXn966eivuMaS1GJQs59M" Patch="Kq76AOcgEVbOwQ3rKxYn3s" />
+            <Fragment Id="VUP4BvhxDutNzpdoLkDBfA" Patch="NMBYGjoBHfSLiizFlcUoSY" />
+            <Fragment Id="VAzushoalEpLAgwRwMDzR9" Patch="AUzaiCQWJ4IPypFosPEYQh" />
+            <Fragment Id="R6fOA1ufFxSMwSvqB89mwk" Patch="RMlVKYGNdgVPKyv0Y0Xujf" />
+            <Fragment Id="RqbeFOjzckPP3FvKqvgSrZ" Patch="Eo51DIl7lpGPlxcFMwyG5h" />
+            <Fragment Id="MI8wXHclHPQLwAMtGRaWmB" Patch="DVODUWgWuSdN4vjSCndQtJ" />
+            <Fragment Id="SMJNcp8DnwENSznKI4qfFU" Patch="Sxsa7kbwJLPOPXZiJnDGfq" />
+            <Fragment Id="P65vtVQodcsNXazvFLfWgI" Patch="PmJG3WGG4RTP0tOOH6iGXB" />
+            <Fragment Id="R1swY0BYo5QMRK7Z115wML" Patch="D7AxJx9IFAKNEPIlvZ8B0L" />
+            <Fragment Id="FTpz69ZGcMyPRW4421gKMT" Patch="VYmaxdcVJnALqPNDLGyMy0" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ YGValue ************************
+
+-->
+      <Node Name="YGValue" Bounds="862,158" Id="QykKW8REcDsMrg1kauzaOi">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="YogaSharp" LastDependency="YogaSharp.dll">
+          <Choice Kind="TypeFlag" Name="YGValue" />
+        </p:TypeAnnotation>
+        <Patch Id="ShCk6wmwlJkOg02c0hT2My">
+          <Canvas Id="JoRtjqdiB31OvNLterLhK9" CanvasType="Group">
+            <!--
+
+    ************************ Auto ************************
+
+-->
+            <Node Name="Auto" Bounds="318,196,121,82" Id="SpKqp0Dv1MYK9mP8l8zcKX">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="Rl5ZBzxr5VyPle6SIJPAKi">
+                <Node Bounds="339,228,38,19" AutoConnect="true" Id="OOKRj2ov9DROdXDAadvIcx">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGValue" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="Auto" />
+                    <FullNameCategoryReference ID="YogaSharp.YGValue" />
+                  </p:NodeReference>
+                  <Pin Id="VgNOYfndaZnQbXSUNrpWUY" Name="Auto" Kind="OutputPin" />
+                </Node>
+                <Pin Id="USZSNCDtdZEPAXf9P8FybW" Name="Auto" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ Undefined ************************
+
+-->
+            <Node Name="Undefined" Bounds="327,346,112,82" Id="QIuLyl0oKPhPRYWWFWoSay">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="EYCVtikmdV1Pc2Y07OvZw4">
+                <Node Bounds="339,378,63,19" AutoConnect="true" Id="UMPMnIelbmxQQRWNfjEWF4">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGValue" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="Undefined" />
+                    <FullNameCategoryReference ID="YogaSharp.YGValue" />
+                  </p:NodeReference>
+                  <Pin Id="VTd92JwXer9N1Qz3U1xkK8" Name="Undefined" Kind="OutputPin" />
+                </Node>
+                <Pin Id="E4rW4eufjW6MOoz0rYStVU" Name="Undefined" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ Zero ************************
+
+-->
+            <Node Name="Zero" Bounds="318,496,122,82" Id="Drk9Jx9Bw2EPcKZTNKcVZa">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="UTt2jeXs37ONembtMEQXZg">
+                <Node Bounds="339,528,37,19" AutoConnect="true" Id="NeAnvkZdVjVP2GsX03hW7P">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGValue" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="Zero" />
+                    <FullNameCategoryReference ID="YogaSharp.YGValue" />
+                  </p:NodeReference>
+                  <Pin Id="LSjymdED9mQPxwveuV7S3m" Name="Zero" Kind="OutputPin" />
+                </Node>
+                <Pin Id="PQ8P2tu5hmUNZj4sxCup60" Name="Zero" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ = ************************
+
+-->
+            <Node Name="=" Bounds="544,100,128,82" Id="DorCAu6in5RMmas9ZAvPDz">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="ErZOEaodK00LJuH29ywk0s">
+                <Node Bounds="572,132,25,19" AutoConnect="true" Id="MrEwFDIfm60LTRvB8Twwr3">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGValue" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="=" />
+                    <FullNameCategoryReference ID="YogaSharp.YGValue" />
+                  </p:NodeReference>
+                  <Pin Id="IkpFoqcRBgLPBf76xpFSdv" Name="Input" Kind="InputPin" />
+                  <Pin Id="DMB1ozGkUv7Ot18NcOoApx" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="Ke1bKU4xsp1OOayDRBN1hy" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="EosK6HMUklALIatxLZLz57" Name="Input" Kind="InputPin" />
+                <Pin Id="MzEHoy8UNHAON76NbInzx2" Name="Input 2" Kind="InputPin" />
+                <Pin Id="PLXmtWlj3XlQRkczPhPV0k" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ FromSingle ************************
+
+-->
+            <Node Name="FromSingle" Bounds="840,100,112,82" Id="SoIkUmMgBRtLIC0i1pDXq3">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="AfKXjtvI2lmLNnAgdlrmcJ">
+                <Node Bounds="852,132,67,19" AutoConnect="true" Id="JpKZVkr6h8UOC3KJksXaw4">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGValue" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="FromSingle" />
+                    <FullNameCategoryReference ID="YogaSharp.YGValue" />
+                  </p:NodeReference>
+                  <Pin Id="RiPN1aueETuNAZr3EVs0JY" Name="Input" Kind="InputPin" />
+                  <Pin Id="DVW11LeOThpLBfuLpWA0Lo" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="PraKdp8OupyPmiyBYVFAFk" Name="Input" Kind="InputPin" />
+                <Pin Id="QaBRcLTjgOzL2i0U9N8iQN" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ != ************************
+
+-->
+            <Node Name="!=" Bounds="546,250,126,82" Id="K6UVEU8SuirLogcWRHvIAR">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="E6IQNqXjaOoPX5tVXr2mX9">
+                <Node Bounds="572,282,27,19" AutoConnect="true" Id="No4DHMrlA1iO0ivnV6ZTGv">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGValue" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="!=" />
+                    <FullNameCategoryReference ID="YogaSharp.YGValue" />
+                  </p:NodeReference>
+                  <Pin Id="Ks3IxbR9QtTOOQqIxhaHsy" Name="Input" Kind="InputPin" />
+                  <Pin Id="SWbTsTwuqDvOriYGTPXY8R" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="Lig8Uik6e0POSBxMO4hwsi" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="DVEdgeWYrFELcVHLmrtpJW" Name="Input" Kind="InputPin" />
+                <Pin Id="Jo3sFeNBivQNR0Qe6XpFxt" Name="Input 2" Kind="InputPin" />
+                <Pin Id="FVHkn4KZ0koQQVDs2glw7o" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ Percent ************************
+
+-->
+            <Node Name="Percent" Bounds="837,250,115,82" Id="HJrrnzT35AEQABOq7dLosQ">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="Rnxb82dUSQ1QagyY0DD0yq">
+                <Node Bounds="852,282,50,19" AutoConnect="true" Id="G6I9PXEiguTPZsO3HWj2Qv">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGValue" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="Percent" />
+                    <FullNameCategoryReference ID="YogaSharp.YGValue" />
+                  </p:NodeReference>
+                  <Pin Id="RdjnfzgMFLRPTYDBIjZ6cz" Name="Value" Kind="InputPin" />
+                  <Pin Id="JJmeKc2EneoL4PBc8MHHEw" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="NrD2SSSVddYPVl5hYkoxq7" Name="Value" Kind="InputPin" />
+                <Pin Id="VbeDXTHk261QT8amw0ZUur" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ Point ************************
+
+-->
+            <Node Name="Point" Bounds="552,400,120,82" Id="LcILfDN7FBeLdJlnWZ2Mgv">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="R1GECdtMDL6QOeG2aeMIHU">
+                <Node Bounds="572,432,39,19" AutoConnect="true" Id="QnrBko4XLoeMdYleitNMGr">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGValue" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="Point" />
+                    <FullNameCategoryReference ID="YogaSharp.YGValue" />
+                  </p:NodeReference>
+                  <Pin Id="FhNH8a6mSFYOqBCX5JdZaM" Name="Value" Kind="InputPin" />
+                  <Pin Id="LlJagL9C8g7K9xG1KXJP5F" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="FeGfv7mUpEMOZeNdnVHg49" Name="Value" Kind="InputPin" />
+                <Pin Id="DoQYi7cj834MZVVuwvF2us" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ Unit ************************
+
+-->
+            <Node Name="Unit" Bounds="852,396,117,80" Id="IQax3ax3FDgLlOawy07PKt">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="EzjbDndI6zVOntOPHdsIX3">
+                <Node Bounds="869,425,46,26" AutoConnect="true" Id="GWOcPLzKdS3MtXquiraMfc">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGValue" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="Unit" />
+                    <FullNameCategoryReference ID="YogaSharp.YGValue" />
+                  </p:NodeReference>
+                  <Pin Id="KYhdLvYqhZqOddJD5Lu9er" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="KlRPlBNKrB5OYhQNxvWnZ6" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="PAdQ8YezlOBOZmEqORfHK2" Name="Unit" Kind="OutputPin" />
+                </Node>
+                <Pin Id="KlwqnyOLcssNEvx58rwuIL" Name="Input" Kind="InputPin" />
+                <Pin Id="NfTvZzLoNqfMHZI1nyQAlR" Name="Output" Kind="OutputPin" />
+                <Pin Id="HjbOhkwgwDIM1LhVGyvkT8" Name="Unit" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ SetUnit ************************
+
+-->
+            <Node Name="SetUnit" Bounds="1133,396,116,80" Id="GqEOhWAldnEPqhRqfZ4bBK">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="DsQLbLmy4b0N1kzyYwaTpT">
+                <Node Bounds="1149,425,49,26" AutoConnect="true" Id="QYIf8P7hB98P4MgwKjSTEE">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGValue" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="SetUnit" />
+                    <FullNameCategoryReference ID="YogaSharp.YGValue" />
+                  </p:NodeReference>
+                  <Pin Id="AcVO6DtpktvNbMZzHVU05Y" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="MC8Og1Qr5FeMfIN3hWI29k" Name="Value" Kind="InputPin" />
+                  <Pin Id="EREtNsMyW75Pv0puJoDqqf" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Pin Id="AFNn8cK39vDM9SI50sxbFJ" Name="Input" Kind="InputPin" />
+                <Pin Id="SlRW2HVF3nvOpFjFvF9VFd" Name="Value" Kind="InputPin" />
+                <Pin Id="LmcCajxsNmRNSU5Yo6xF8g" Name="Output" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ Value ************************
+
+-->
+            <Node Name="Value" Bounds="852,546,117,80" Id="DnM3VNVKHhQMrrQkX0ek7I">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="NeZXQbZE01QQMWtyAj9xWL">
+                <Node Bounds="869,575,46,26" AutoConnect="true" Id="TQ2cbBg7kD2Pl3NM3LmTZx">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGValue" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="Value" />
+                    <FullNameCategoryReference ID="YogaSharp.YGValue" />
+                  </p:NodeReference>
+                  <Pin Id="PhBhdUrc3N2NIuqXLv0D51" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="NydPOYdmBsCPd8Ese5ezdm" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="M883F6Swy3IPqfXn6ekAHw" Name="Value" Kind="OutputPin" />
+                </Node>
+                <Pin Id="SNIFk9H6wEILVgL7WaEeNu" Name="Input" Kind="InputPin" />
+                <Pin Id="KlF9CIDbjSANrHGgAdHjek" Name="Output" Kind="OutputPin" />
+                <Pin Id="IEINknucIOlOijmWYkOD3U" Name="Value" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ SetValue ************************
+
+-->
+            <Node Name="SetValue" Bounds="1136,546,112,80" Id="FsKu3Z7T30dLx6pG6dsdjO">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="Q7jleTAShfzMxXGWLGUjH6">
+                <Node Bounds="1149,575,55,26" AutoConnect="true" Id="SaIZHZ7crn3NQJYZasq0ss">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGValue" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="SetValue" />
+                    <FullNameCategoryReference ID="YogaSharp.YGValue" />
+                  </p:NodeReference>
+                  <Pin Id="O7YhDFQBuQbOs6EFcFpAGU" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="OKoQ8fZUb9GNQm8dIdcIML" Name="Value" Kind="InputPin" />
+                  <Pin Id="IgQq7nGQQucPJLc3gjP2Df" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Pin Id="UbmRARy5mD8OVc3vBUAHXP" Name="Input" Kind="InputPin" />
+                <Pin Id="MdkCjLqq0kUMko3Y5dIK4f" Name="Value" Kind="InputPin" />
+                <Pin Id="QjVSJi1QeQlMJVIfPYnMr7" Name="Output" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ Equals ************************
+
+-->
+            <Node Name="Equals" Bounds="1419,128,117,80" Id="NPasgm4ejMBNaUArPNimXK">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="FIt29cTy7tZP83S0Mi01Ev">
+                <Node Bounds="1436,157,46,26" AutoConnect="true" Id="Lf6zshim3VJPMnQgzYEuIu">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGValue" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="Equals" />
+                    <FullNameCategoryReference ID="YogaSharp.YGValue" />
+                  </p:NodeReference>
+                  <Pin Id="SyUUuubjNTcNvtWjnfF1X9" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="OrrAt99HsN5OojLH4MT2gq" Name="Obj" Kind="InputPin" />
+                  <Pin Id="DDggvA3NNiPM9oluef18Es" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="H5eP95H171iOoZfqzwluad" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="JoKk788G1n4LCbEwUzQQZD" Name="Input" Kind="InputPin" />
+                <Pin Id="QciONKfjxsJMCoUf6w6Hkz" Name="Obj" Kind="InputPin" />
+                <Pin Id="SbyL8g8Om9fLGUsDSUNBOJ" Name="Output" Kind="OutputPin" />
+                <Pin Id="NxVeqjzR0TROrRff8pAnxa" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ GetHashCode ************************
+
+-->
+            <Node Name="GetHashCode" Bounds="1704,128,112,80" Id="FeALxgFhdHcOLCcuJJ3qsF">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="QvE9KEv4Ii5LTekbP7Hf9N">
+                <Node Bounds="1716,157,78,26" AutoConnect="true" Id="LUrkwN6D7SYMWxq4JZdQIE">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGValue" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="GetHashCode" />
+                    <FullNameCategoryReference ID="YogaSharp.YGValue" />
+                  </p:NodeReference>
+                  <Pin Id="QmAmfHFlT5kQSOvgvyXkQN" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="KHG4U6tpkSVMVlxaWAu0L8" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="UAbxnKnNsjWPrxLtvFNwli" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="U32uMY0VrpXLviJI3kFa2v" Name="Input" Kind="InputPin" />
+                <Pin Id="S5wj9YHZPfkLLX5MhHaCKe" Name="Output" Kind="OutputPin" />
+                <Pin Id="KnlxHtMP2fKMMYfuxGnbRl" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ IsApproximately ************************
+
+-->
+            <Node Name="IsApproximately" Bounds="1424,278,114,80" Id="IcJqSX2LhQ3PUtqqfvUf41">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="E662Nc3GBubMFOkDs9g267">
+                <Node Bounds="1436,307,90,26" AutoConnect="true" Id="JWpm1rsKUftNa3LZ84NlW3">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGValue" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="IsApproximately" />
+                    <FullNameCategoryReference ID="YogaSharp.YGValue" />
+                  </p:NodeReference>
+                  <Pin Id="GaCpd36GoN2QbMkoe0Pxdq" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="LBgcdrcZ6CPLAFgx7249rB" Name="Other" Kind="InputPin" />
+                  <Pin Id="Ka0tExsxCjnMObIv79S8Mx" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="UKMULEhmbHPPmxVziGTobs" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="TsYWVZt5i0DNgMWZ99m8YX" Name="Input" Kind="InputPin" />
+                <Pin Id="Ve49Rj8HXlKPyA4zl6rUIn" Name="Other" Kind="InputPin" />
+                <Pin Id="O5nhi9dZvEwNXCYzFNd0Qw" Name="Output" Kind="OutputPin" />
+                <Pin Id="KKHzfXP5o6NO58M2nNxIho" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ ToString ************************
+
+-->
+            <Node Name="ToString" Bounds="1704,278,112,80" Id="DK3lAtQaIU7N6V1wZlVfoJ">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="TDhQG3S6tGvQSHnF5VlQkA">
+                <Node Bounds="1716,307,55,26" AutoConnect="true" Id="A2KdbmFg4KnLzbnkYMlOyQ">
+                  <p:NodeReference LastCategoryFullName="YogaSharp.YGValue" LastDependency="YogaSharp.dll">
+                    <Choice Kind="OperationNode" Name="ToString" />
+                    <FullNameCategoryReference ID="YogaSharp.YGValue" />
+                  </p:NodeReference>
+                  <Pin Id="DYjDIpggoulLG7AZE9gJhG" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="FXr3wO2th6FNw7X3uD2j7V" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="PHlKrQ1LcVFPgHXEUGjNqo" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="OIqk4yfjrlMLK57R6wDGcS" Name="Input" Kind="InputPin" />
+                <Pin Id="GPl2iLgY2ESQXDPWMZXA20" Name="Output" Kind="OutputPin" />
+                <Pin Id="AYSvwCs2dvnLnK6leHVOSt" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+          </Canvas>
+          <ProcessDefinition Id="NbHqHmfSy6MLudQpudzw9G" IsHidden="true">
+            <Fragment Id="J46mf4mnVERP5IyIHz60rc" Patch="SpKqp0Dv1MYK9mP8l8zcKX" />
+            <Fragment Id="Otng3cGprd4QWiDqlS3Nrf" Patch="QIuLyl0oKPhPRYWWFWoSay" />
+            <Fragment Id="UJcBzJW93P5QQZr72sFH1s" Patch="Drk9Jx9Bw2EPcKZTNKcVZa" />
+            <Fragment Id="QyuOVNeyYD2QIdl2lYbO61" Patch="DorCAu6in5RMmas9ZAvPDz" />
+            <Fragment Id="Js0ZXf4MkqQN7ENHvFO2a6" Patch="SoIkUmMgBRtLIC0i1pDXq3" />
+            <Fragment Id="EBIAWi1gZ28MnWmzmMB6hR" Patch="K6UVEU8SuirLogcWRHvIAR" />
+            <Fragment Id="VJmMUqMBBPnLn8Jywmd5rv" Patch="HJrrnzT35AEQABOq7dLosQ" />
+            <Fragment Id="UkAwBc71hUdQHu5ePuG1Mg" Patch="LcILfDN7FBeLdJlnWZ2Mgv" />
+            <Fragment Id="Q838D5wf9oCLqXAj1S0TtP" Patch="IQax3ax3FDgLlOawy07PKt" />
+            <Fragment Id="U9wd0h6PGnxQdzQKi6XVHp" Patch="GqEOhWAldnEPqhRqfZ4bBK" />
+            <Fragment Id="IbBRNYr07KaOvISBTDdhMA" Patch="DnM3VNVKHhQMrrQkX0ek7I" />
+            <Fragment Id="Uojvel5Q8cjQXmbYxg6ePv" Patch="FsKu3Z7T30dLx6pG6dsdjO" />
+            <Fragment Id="EuyPeeKSwAyOQaNVG8PiTV" Patch="NPasgm4ejMBNaUArPNimXK" />
+            <Fragment Id="AzJxf6mf0U4LxENpwprDRt" Patch="FeALxgFhdHcOLCcuJJ3qsF" />
+            <Fragment Id="VcnsqvRlCPQMDTSDmeVIgO" Patch="IcJqSX2LhQ3PUtqqfvUf41" />
+            <Fragment Id="GvLihIi91c3OdjNuShmXtK" Patch="DK3lAtQaIU7N6V1wZlVfoJ" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 
@@ -3713,5 +4116,6 @@
       </Patch>
     </Node>
   </Patch>
-  <PlatformDependency Id="K35CdfNdrJqLeTki143H4o" Location="./lib/net8.0/VL.Yoga.dll" />
+  <PlatformDependency Id="DlWRqzcyW6VQEk0NkvYCWk" Location="./lib/net8.0-windows/VL.Yoga.dll" />
+  <PlatformDependency Id="UUzJS0B308ZNeTbbat8xRE" Location="./lib/net8.0-windows/YogaSharp.dll" />
 </Document>

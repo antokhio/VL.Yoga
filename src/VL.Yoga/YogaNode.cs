@@ -1,4 +1,6 @@
-﻿namespace VL.Yoga
+﻿using YogaSharp;
+
+namespace VL.Yoga
 {
     public partial class YogaNode : IDisposable
     {
