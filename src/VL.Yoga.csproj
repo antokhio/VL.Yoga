@@ -26,4 +26,8 @@
     </None>
   </ItemGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;.\..\lib\$(Configuration)\net8.0\*&quot; &quot;.\..\lib\net8.0&quot; /h /i /c /k /e /r /y&#xD;&#xA;rd /s /q &quot;.\..\lib\$(Configuration)&quot;" />
+  </Target>
+
 </Project>
