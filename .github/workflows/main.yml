@@ -3,7 +3,7 @@ name: push_release_nuget
 on:
   push:
     branches:
-      - feat/revamp
+      - develop
     paths-ignore:
       - README.md
 
