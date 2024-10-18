@@ -1,0 +1,14 @@
+Submodule src/YogaSharp contains modified content
+diff --git a/src/YogaSharp/YogaSharp/Interop.cs b/src/YogaSharp/YogaSharp/Interop.cs
+index 159c044..ac0ba9c 100644
+--- a/src/YogaSharp/YogaSharp/Interop.cs
++++ b/src/YogaSharp/YogaSharp/Interop.cs
+@@ -4,7 +4,7 @@ namespace YogaSharp;
+ 
+ public static unsafe partial class Interop
+ {
+-    private const string yogacoredll = @"runtimes\win-x64\native\yogacore.dll";
++    private const string yogacoredll = "yogacore.dll";
+ 
+     /// <summary>
+     /// Returns the computed dimensions of the node, following the contraints of <paramref name="widthMode"/> and <paramref name="heightMode"/>:<br/>

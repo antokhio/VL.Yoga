@@ -1,6 +1,5 @@
 name: push_release_nuget
 
-# on push on master
 on:
   push:
     branches:
@@ -24,17 +23,11 @@ jobs:
         uses: nuget/setup-nuget@v1
 
       - name: Apply patch
-        run: git apply --ignore-whitespace shared-build.patch
-
-      - name: Build yogacore
-        uses: threeal/cmake-action@v2.0.0
-        with:
-          source-dir: yoga\yoga
-          build-dir: out
+        run: git apply --ignore-whitespace .patch
 
       - name: Publish VL Nuget
         uses: vvvv/PublishVLNuget@1.0.41
         with:
-          csproj: src\Vl.Yoga.csproj
+          csproj: src\VL.Yoga\Vl.Yoga.csproj
           nuspec: deployment\VL.Yoga.nuspec
           nuget-key: ${{ secrets.NUGET_KEY }}
