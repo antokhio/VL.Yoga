@@ -31,7 +31,7 @@
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="call $(ProjectDir)..\pre-build.cmd $(ProjectDir)..\" />
+    <Exec Command="call $(ProjectDir)..\pre-build.cmd $(ProjectDir)" />
   </Target>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
