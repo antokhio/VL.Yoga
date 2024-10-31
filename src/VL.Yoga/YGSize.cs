@@ -11,7 +11,7 @@ namespace VL.Yoga
             Height = size.Y
         };
 
-        public static Vector2 Vector2(YGSize size) => new Vector2(size.Width, size.Height);
+        public static Vector2 Vector2(YGSize size) => new(size.Width, size.Height);
     }
 }
 
