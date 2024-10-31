@@ -1,6 +1,9 @@
 # yogacore
 out/
 
+# my tests
+.tests
+
 # VL
 
 .vl/

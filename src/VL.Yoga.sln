@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VL.Yoga", "VL.Yoga\VL.Yoga.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YogaSharp", "YogaSharp\YogaSharp\YogaSharp.csproj", "{5727CCC7-8928-4E8A-AF61-5B851D2762B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VL.Yoga.Generator", "VL.Yoga.Generator\VL.Yoga.Generator.csproj", "{A769ABA5-A210-4525-AB84-1632659193FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,14 @@ Global
 		{5727CCC7-8928-4E8A-AF61-5B851D2762B9}.Release|Any CPU.Build.0 = Release|x64
 		{5727CCC7-8928-4E8A-AF61-5B851D2762B9}.Release|x64.ActiveCfg = Release|x64
 		{5727CCC7-8928-4E8A-AF61-5B851D2762B9}.Release|x64.Build.0 = Release|x64
+		{A769ABA5-A210-4525-AB84-1632659193FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A769ABA5-A210-4525-AB84-1632659193FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A769ABA5-A210-4525-AB84-1632659193FA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A769ABA5-A210-4525-AB84-1632659193FA}.Debug|x64.Build.0 = Debug|Any CPU
+		{A769ABA5-A210-4525-AB84-1632659193FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A769ABA5-A210-4525-AB84-1632659193FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A769ABA5-A210-4525-AB84-1632659193FA}.Release|x64.ActiveCfg = Release|Any CPU
+		{A769ABA5-A210-4525-AB84-1632659193FA}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

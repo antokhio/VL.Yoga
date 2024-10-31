@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>VL.Yoga</id>
-    <version>0.1.5</version>
+    <version>0.3.0</version>
     <title>VL.Yoga</title>
     <authors>antokhio, bjorn</authors>
     <owners>antokhio</owners>
@@ -13,7 +13,7 @@
     <summary>https://github.com/facebook/yoga port to https://visualprogramming.net/</summary>
     <description>Set of nodes to create flex layouts</description>
     <copyright>Copyright © 2024 antokhio</copyright>
-    <tags>VL, vvvv, yoga</tags>
+    <tags>VL, vvvv, yoga, flex</tags>
     <dependencies>
       <group targetFramework="net8.0" />
     </dependencies>
@@ -22,7 +22,7 @@
     <file src="..\lib\net8.0-windows\*" target="lib\net8.0\" />
     <file src="..\runtimes\win-x64\native\yogacore.dll" target="runtimes\win-x64\native\yogacore.dll" />
     <file src="..\*.vl"/>
-    <!-- <file src="..\help\*.vl" target="help"/> -->
+    <file src="..\help\*.vl" target="help"/>
     <file src="..\README.md" />
     <file src="..\LICENSE" />
   </files>

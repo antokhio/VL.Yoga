@@ -10,11 +10,23 @@
     <BaseOutputPath></BaseOutputPath>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+    <CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)generated</CompilerGeneratedFilesOutputPath>
+    <RootNamespace>Flex</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <NuGetAuditSuppress Include="https://github.com/advisories/GHSA-8g4q-xg66-9fp4" />
+  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="VL.Core" Version="2024.6.6" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\VL.Yoga.Generator\VL.Yoga.Generator.csproj" PrivateAssets="all" ReferenceOutputAssembly="false" OutputItemType="Analyzer" SetTargetFramework="TargetFramework=netstandard2.0" />
     <ProjectReference Include="..\YogaSharp\YogaSharp\YogaSharp.csproj" />
   </ItemGroup>
 

@@ -1,7 +1,7 @@
 ﻿using Stride.Core.Mathematics;
 using YogaSharp;
 
-namespace VL.Yoga
+namespace Flex
 {
     public static class Extensions
     {
@@ -11,7 +11,7 @@ namespace VL.Yoga
             Height = size.Y
         };
 
-        public static Vector2 Vector2(YGSize size) => new Vector2(size.Width, size.Height);
+        public static Vector2 Vector2(YGSize size) => new(size.Width, size.Height);
     }
 }
 
