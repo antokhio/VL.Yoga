@@ -1,7 +1,7 @@
 ﻿using VL.Core.Import;
 using YogaSharp;
 
-namespace VL.Yoga
+namespace Flex
 {
     public partial class FlexNode : IFlexNode, IDisposable
     {

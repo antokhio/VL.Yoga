@@ -1,7 +1,7 @@
 ﻿using Stride.Core.Mathematics;
 using YogaSharp;
 
-namespace VL.Yoga
+namespace Flex
 {
     public static class Extensions
     {

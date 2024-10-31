@@ -22,7 +22,7 @@ namespace VL.Yoga.Generator.Sources
 
         using YogaSharp;
 
-        namespace VL.Yoga
+        namespace Flex
         {{
             public partial class {CLASS_NAME} 
             {{

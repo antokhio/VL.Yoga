@@ -1,6 +1,6 @@
 ﻿using YogaSharp;
 
-namespace VL.Yoga
+namespace Flex
 {
     public interface IFlexConfig
     {

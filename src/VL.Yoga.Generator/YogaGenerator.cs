@@ -18,10 +18,10 @@ namespace VL.Yoga.Generator
         private static void PostInitializationCallback(IncrementalGeneratorPostInitializationContext context)
         {
             // Generates YogaStyle from config
-            context.AddSource("YogaStyle.g.cs", Sources.StyleSource.YogaStyleSource());
+            context.AddSource("FlexStyle.g.cs", Sources.StyleSource.YogaStyleSource());
 
             // Generates YogaConfig from config
-            context.AddSource("YogaConfig.g.cs", Sources.ConfigSource.YogaConfigSource());
+            context.AddSource("FlexConfig.g.cs", Sources.ConfigSource.YogaConfigSource());
         }
     }
 }

@@ -3,7 +3,7 @@ using VL.Lib.Collections;
 using VL.Lib.Reactive;
 using YogaSharp;
 
-namespace VL.Yoga
+namespace Flex
 {
     public partial class FlexNode : IFlexNode, IDisposable
     {

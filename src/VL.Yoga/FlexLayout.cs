@@ -2,7 +2,7 @@
 using VL.Core.Import;
 using YogaSharp;
 
-namespace VL.Yoga
+namespace Flex
 {
     public record struct FlexLayout
     {

@@ -1,4 +1,4 @@
-﻿namespace VL.Yoga
+﻿namespace Flex
 {
     public interface IFlexStyle
     {
