@@ -13,7 +13,6 @@ namespace VL.Yoga.Generator.Sources
             ["UseWebDefaults"] = new() { ["bool"] = "enabled" },
             ["PointScaleFactor"] = new() { ["float"] = "pixelsInPoint" },
             ["Errata"] = new() { ["YGErrata"] = "errata" },
-            ["ExperimentalFeatureEnabled"] = new() { ["YGExperimentalFeature"] = "feature", ["bool"] = "enabled" },
         };
 
         public static string YogaConfigSource() => @$"
@@ -24,32 +23,39 @@ namespace VL.Yoga.Generator.Sources
 
         namespace Flex
         {{
-            public partial class {CLASS_NAME} 
+            public static partial class {CLASS_NAME} 
             {{
-                {string.Join("\r\n", NODES.Select((style) => YogaConfigNodeImplementation(style.Key, style.Value)))}
+                {string.Join("\r\n", NODES.Select((style) => FlexConfigSetter(style.Key, style.Value)))}
             }}
+        }}
+
+        namespace Flex.Internal
+        {{
+            {string.Join("\r\n", NODES.Select((style) => FlexConfigStruct(style.Key, style.Value)))}
         }}
         ";
 
-        public static string YogaConfigNodeImplementation(string name, Dictionary<string, string> attributes)
+        public static string FlexConfigSetter(string name, Dictionary<string, string> attributes)
         {
             var hasAttributes = attributes.Count > 0;
+            return $@"
+            public static Internal.{CLASS_NAME}{name} Set{name}({INTERFACE_NAME}? config{(hasAttributes ? ", " : "")}{string.Join(", ", attributes.Select((value) => $"{value.Key} {value.Value}"))}) => new(config{(hasAttributes ? ", " : "")}{string.Join(", ", attributes.Select((value) => value.Value))});
+            ";
+        }
 
-            return @$"   
-        public record struct {CLASS_NAME}{name}({INTERFACE_NAME}? Config{(hasAttributes ? ", " : "")}{string.Join(", ", attributes.Select((value) => $"{value.Key} {value.Value.ToPascalCase()}"))}) : {INTERFACE_NAME}
-        {{
-            public void ApplyConfig(FlexConfig node, IFlexConfig config)
-            {{
-                unsafe 
+        public static string FlexConfigStruct(string name, Dictionary<string, string> attributes)
+        {
+            var hasAttributes = attributes.Count > 0;
+            return $@"
+                public unsafe record struct {CLASS_NAME}{name}({INTERFACE_NAME}? Config{(hasAttributes ? ", " : "")}{string.Join(", ", attributes.Select((value) => $"{value.Key} {value.Value.ToPascalCase()}"))}) : {INTERFACE_NAME}
                 {{
-                    Interop.YGConfigSet{name}(node.GetHandle(){(hasAttributes ? ", " : "")}{(hasAttributes ? string.Join(", ", attributes.Select((value) => value.Value.ToPascalCase())) : "")});
-                    Config?.ApplyConfig(node, config);
+                    public unsafe void ApplyConfig(YGConfig* handle)
+                    {{
+                        handle->Set{name}({(hasAttributes ? string.Join(", ", attributes.Select((value) => value.Value.ToPascalCase())) : "")});
+                        Config?.ApplyConfig(handle);
+                    }}
                 }}
-            }}
-        }}
-
-        public static {CLASS_NAME}{name} Set{name}({INTERFACE_NAME}? style{(hasAttributes ? ", " : "")}{string.Join(", ", attributes.Select((value) => $"{value.Key} {value.Value}"))}) => new {CLASS_NAME}{name}(style{(hasAttributes ? ", " : "")}{string.Join(", ", attributes.Select((value) => value.Value))});
-        ";
+            ";
         }
     }
 }

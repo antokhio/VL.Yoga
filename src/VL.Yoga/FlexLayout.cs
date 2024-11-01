@@ -11,17 +11,19 @@ namespace Flex
         public float Width { get; set; }
         public float Height { get; set; }
 
+        // shouldScroll?
+
         public unsafe FlexLayout(YGNode* handle, FlexLayout? ownerLayout = null)
         {
-            Left = Interop.YGNodeLayoutGetLeft(handle) + ownerLayout?.Left ?? .0f;
-            Top = Interop.YGNodeLayoutGetTop(handle) + ownerLayout?.Top ?? .0f;
-            Width = Interop.YGNodeLayoutGetWidth(handle);
-            Height = Interop.YGNodeLayoutGetHeight(handle);
+            Left = handle->GetComputedLeft() + ownerLayout?.Left ?? .0f;
+            Top = handle->GetComputedTop() + ownerLayout?.Top ?? .0f;
+            Width = handle->GetComputedWidth();
+            Height = handle->GetComputedHeight();
         }
-
         public static unsafe FlexLayout GetLayout(YGNode* handle)
         {
-            var owner = Interop.YGNodeGetOwner(handle);
+            var owner = handle->GetOwner();
+
             if (owner != null)
             {
                 var ownerLayout = GetLayout(owner);
@@ -29,14 +31,6 @@ namespace Flex
             }
 
             return new FlexLayout(handle);
-        }
-
-        public FlexLayout(FlexNode node)
-        {
-            unsafe
-            {
-                this = GetLayout(node.handle);
-            }
         }
 
         public static void Split(in FlexLayout layout, out Vector2 position, out Vector2 size)
@@ -89,7 +83,7 @@ namespace Flex
 
             if (canCalculateLayout)
             {
-                var isDirty = node?.IsDirty() ?? false;
+                var isDirty = node?.IsDirty ?? false;
 
                 if (shouldCalculateLayout || isDirty)
                 {
@@ -100,10 +94,13 @@ namespace Flex
                         _ownerDirection = ownerDirection;
                         _node = node;
 
-                        Interop.YGNodeCalculateLayout(_node!.GetHandle(), _ownerWidth ?? float.NaN, _ownerHeight ?? float.NaN, _ownerDirection ?? YGDirection.Inherit);
+                        node.GetHandle()->CalculateLayout(_ownerWidth ?? float.NaN, _ownerHeight ?? float.NaN, _ownerDirection ?? YGDirection.Inherit);
                     }
                 }
-
+            }
+            else
+            {
+                _node = null;
             }
         }
     }

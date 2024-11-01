@@ -5,85 +5,65 @@ namespace Flex
     public interface IFlexConfig
     {
         IFlexConfig? Config { get; set; }
-        public void ApplyConfig(FlexConfig node, IFlexConfig config);
+        public unsafe void ApplyConfig(YGConfig* handle);
     }
-
-    public static partial class Config
+    internal class FlexConfig : IDisposable
     {
-        public record struct HiddenStruct(float Test);
-        // TEMPLATE CONFIG
-        /*
-        public record struct ConfigUseWebDefaults(IFlexConfig? Config, bool Enabled) : IFlexConfig
-        {
-            public void ApplyConfig(FlexConfig node, IFlexConfig config)
-            {
-                unsafe
-                {
-                    Interop.YGConfigSetUseWebDefaults(node.GetHandle(), Enabled);
-                    Config?.ApplyConfig(node, Config);
-                }
-            }
-        }
-
-        public static ConfigUseWebDefaults SetUseWebDefaults(IFlexConfig? style, bool enabled) => new ConfigUseWebDefaults(style, enabled);
-        */
-    }
-
-    public partial class FlexConfig : IDisposable
-    {
-        protected internal unsafe YGConfig* handle;
+        protected internal unsafe YGConfig* handle = YGConfig.GetDefault();
+        public unsafe YGConfig* GetHandle() => handle;
         public FlexConfig()
         {
             ConfigDefault();
         }
 
-        public void ApplyConfig(IFlexNode? node, IFlexConfig config)
+        public unsafe void ApplyConfig(IFlexNode node, IFlexConfig config)
         {
-            unsafe
-            {
-                config?.ApplyConfig(this, config);
+            config.ApplyConfig(handle);
+            node.GetHandle()->SetConfig(handle);
+        }
 
-                if (node != null)
-                {
-                    Interop.YGNodeSetConfig(node.GetHandle(), GetHandle());
-                }
+        public unsafe void ConfigDefault(IFlexNode? node = null)
+        {
+            // TODO: Figure out how to reset config
+            handle->SetPointScaleFactor(0);
+
+            if (node != null)
+            {
+                node.GetHandle()->SetConfig(handle);
             }
         }
 
-        public void ConfigDefault(IFlexNode? node = null)
-        {
-            unsafe
-            {
-                handle = Interop.YGConfigGetDefault();
-                Interop.YGConfigSetPointScaleFactor(handle, 0.0f);
 
-                if (node != null)
-                {
-                    Interop.YGNodeSetConfig(node.GetHandle(), GetHandle());
-                }
-            }
-        }
-
-        public unsafe YGConfig* GetHandle() => handle;
-
-        public bool IsValid()
-        {
-            unsafe
-            {
-                return handle != null;
-            }
-        }
 
         public void Dispose()
         {
             unsafe
             {
-                if (IsValid())
-                {
-                    Interop.YGConfigFree(handle);
-                    handle = null;
-                }
+                handle->Dispose();
             }
         }
     }
+
+    public static partial class Config
+    {
+        // TEMPLATE
+        /*
+        public static Internal.ConfigUseWebDefaults SetUseWebDefaults(IFlexConfig? config, bool enabled) => new(config, enabled);
+        */
+    }
+}
+
+namespace Flex.Internal
+{
+    // TEMPLATE 
+    /*
+    public unsafe record struct ConfigUseWebDefaults(IFlexConfig? Config, bool Enabled) : IFlexConfig
+    {
+        public unsafe void ApplyConfig(YGConfig* handle)
+        {
+            handle->SetUseWebDefaults(Enabled);
+            Config?.ApplyConfig(handle);
+        }
+    }
+    */
 }

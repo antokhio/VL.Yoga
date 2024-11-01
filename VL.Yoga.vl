@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="KfncwHPch4IP9gih2hYDUp" LanguageVersion="2024.6.7-0198-g80d0f756b0" Version="0.128">
-  <NugetDependency Id="B9JIv3hEl1IMyIhQxdm1hS" Location="VL.CoreLib" Version="2024.6.7-0198-g80d0f756b0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="KfncwHPch4IP9gih2hYDUp" LanguageVersion="2024.6.7-0217-gb4f7c1f3e0" Version="0.128">
+  <NugetDependency Id="B9JIv3hEl1IMyIhQxdm1hS" Location="VL.CoreLib" Version="2024.6.7-0217-gb4f7c1f3e0" />
   <Patch Id="CVzliw5feNRQTdNwf58EwN">
     <Canvas Id="FruPQfWaAVEM14EdnKs6Xi" DefaultCategory="Flex" CanvasType="FullCategory">
       <Canvas Id="UAsVUbHFMbmNPsPEn9VrJy" Name="Enums" Position="109,144">
@@ -334,7 +334,7 @@
     ************************ IFlexElement ************************
 
 -->
-      <Node Name="IFlexElement" Bounds="241,144" Id="C9LQHOrR4qSPMqrHexW21g">
+      <Node Name="IFlexElement" Bounds="244,147" Id="C9LQHOrR4qSPMqrHexW21g">
         <p:NodeReference>
           <Choice Kind="InterfaceDefinition" />
         </p:NodeReference>
@@ -366,7 +366,7 @@
     ************************ Rectangle ************************
 
 -->
-      <Node Name="Rectangle" Category="Flex.Skia" Bounds="284,284" Id="SU6dLuVNrdyLwNYX8uXTfC">
+      <Node Name="Rectangle" Category="Flex.Skia" Bounds="209,247" Id="SU6dLuVNrdyLwNYX8uXTfC">
         <p:NodeReference>
           <Choice Kind="ClassDefinition" />
         </p:NodeReference>
@@ -431,15 +431,17 @@
               <ControlPoint Id="EgzCnPtfxogQE8wo34l2dr" Bounds="624,474" Alignment="Bottom" />
               <ControlPoint Id="SI0TvSjxDbFP1KvJJyzm0Q" Bounds="704,474" Alignment="Bottom" />
             </Node>
-            <Node Bounds="623,587,59,19" Id="FmmRGNrRw1nODHtQ8N0ZET">
+            <Node Bounds="623,587,65,19" Id="FmmRGNrRw1nODHtQ8N0ZET">
               <p:NodeReference LastCategoryFullName="VL.Yoga" LastDependency="VL.Yoga.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="FlexNode" />
               </p:NodeReference>
               <Pin Id="IZzYUv2rE11P5HhgJnKF2d" Name="Children" Kind="InputPin" />
               <Pin Id="TMZhQk9A0PAPzrK8IYeBwI" Name="Style" Kind="InputPin" />
-              <Pin Id="ICu7RzbwOSkPBZE7sB3BUi" Name="Layout" Kind="InputPin" />
+              <Pin Id="RUHjQzmURRELaZuYvX2FcR" Name="Layout Channel" Kind="InputPin" />
               <Pin Id="LmTln6jUm2IMThIiuHsJs3" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="R7zw1zYn3RmOs7oyAAYI5B" Name="Layout" Kind="OutputPin" />
+              <Pin Id="N7QcsMintyWQCuHqzuEDP4" Name="Style" Kind="OutputPin" />
             </Node>
             <Node Bounds="702,585,45,19" Id="Q7KAcn4zdTqNq67ndI4olL">
               <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
@@ -513,6 +515,7 @@
             <Pad Id="M8yrtKQLWwtNZMT2xF8v7T" Bounds="627,759" />
             <ControlPoint Id="KoTzzC2knzMNT38kv11Hyw" Bounds="971,326" />
             <ControlPoint Id="PX44tPTKkKOQJzDQxB3wUh" Bounds="1053,326" />
+            <ControlPoint Id="Cb75Taxe8E5QP4X4GkLoWG" Bounds="726,813" />
           </Canvas>
           <Patch Id="GmRhXgEnjvTQQJZOKej6As" Name="Create" />
           <ProcessDefinition Id="BqamTZ2eGlqMfQgIRSAP4f" HasStateOut="true">
@@ -526,6 +529,7 @@
             <Pin Id="FtaQHZOjQjhQdWkdU65vul" MergeId="1587" Name="Style" Kind="InputPin" />
             <Pin Id="DqUMSnGVnNwPfNwRBwDwZS" MergeId="1588" Name="Paint" Kind="InputPin" />
             <Pin Id="JI6TNDOMaYsLcbvzoxWdNk" MergeId="1589" Name="Enabled" Kind="InputPin" />
+            <Pin Id="IR9YXf4OKyXMt1LwDnUhMw" Name="Layout" Kind="OutputPin" />
           </Patch>
           <Patch Id="MWR6ckqKDF7QMSg1yhAUYR" Name="GetNode">
             <Pin Id="BvVLObA1LdeMzqchePwUMP" MergeId="1618" Name="Output" Kind="OutputPin" />
@@ -547,7 +551,6 @@
           <Link Id="T228Y9A0cZDO1jCWgwG92G" Ids="IzuO5KNMJTSPedO2BFY3f6,TMZhQk9A0PAPzrK8IYeBwI" />
           <Link Id="O4ncPLnP319QKgMlprBxdt" Ids="FtaQHZOjQjhQdWkdU65vul,IzuO5KNMJTSPedO2BFY3f6" IsHidden="true" />
           <Link Id="HxTLUMD9dbCPE9EJwzfAcP" Ids="ORXhUU2cE0YLJbHI68gfAp,NnL0x4NuHOlLx0aUUrCr2N" />
-          <Link Id="O1McdawEPI4OpuZSfQWTcs" Ids="Q6Mb8yqBPdzPNJdVjq8cmx,ICu7RzbwOSkPBZE7sB3BUi" />
           <Link Id="Mh5pnV4jsW4N0isJZoTCBJ" Ids="PgIHERPtrwQPn4RytUTOk6,LZdOHdYpS4YN8TwKOjGGzF" />
           <Link Id="B7M6xeuS18hQW3AQNAZhtO" Ids="S297axy302YOOBLoUl3lHv,LXhXSstutLHOJJPLvUki5e" />
           <Link Id="UPDaJbpBrNHOeRDzUb2FCd" Ids="Q8TMuoQWJR2L2hKL9jzMNA,O5wgHAQ4ojxNkrdavIEcRI" />
@@ -563,6 +566,9 @@
           <Link Id="K6fZ2PfZV0VLEXgD9j9LVf" Ids="DqUMSnGVnNwPfNwRBwDwZS,KoTzzC2knzMNT38kv11Hyw" IsHidden="true" />
           <Link Id="SLWbfKtZ4R8Nb9yvejTLQ1" Ids="PX44tPTKkKOQJzDQxB3wUh,L5b3exr0YYtN2S14guUd4Z" />
           <Link Id="TC7ES5Bvsr7PcArEhg2LD5" Ids="JI6TNDOMaYsLcbvzoxWdNk,PX44tPTKkKOQJzDQxB3wUh" IsHidden="true" />
+          <Link Id="HshkLQZhvFVMIOkV1Fdb4V" Ids="Q6Mb8yqBPdzPNJdVjq8cmx,RUHjQzmURRELaZuYvX2FcR" />
+          <Link Id="Ga6W5bCS1c6NyRGvo4BbMm" Ids="R7zw1zYn3RmOs7oyAAYI5B,Cb75Taxe8E5QP4X4GkLoWG" />
+          <Link Id="VtCXIeX0Fn4QNdRccgVnXz" Ids="Cb75Taxe8E5QP4X4GkLoWG,IR9YXf4OKyXMt1LwDnUhMw" IsHidden="true" />
         </Patch>
       </Node>
     </Canvas>
@@ -589,5 +595,5 @@
   </Patch>
   <PlatformDependency Id="UUzJS0B308ZNeTbbat8xRE" Location="./lib/net8.0-windows/YogaSharp.dll" />
   <PlatformDependency Id="T4WrUWu3s0VNLFk5wbpiPQ" Location="./lib/net8.0-windows/VL.Yoga.dll" IsForward="true" />
-  <NugetDependency Id="JyzBXlwNVsWN6fDO8JbEnK" Location="VL.Skia" Version="2024.6.7-0198-g80d0f756b0" />
+  <NugetDependency Id="JyzBXlwNVsWN6fDO8JbEnK" Location="VL.Skia" Version="2024.6.7-0217-gb4f7c1f3e0" />
 </Document>

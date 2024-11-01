@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="JlCRgDsjyHLMqBVCkP99UB" LanguageVersion="2024.6.7-0198-g80d0f756b0" Version="0.128">
-  <NugetDependency Id="JksRdxQYvjzNbL0z98MHj6" Location="VL.CoreLib" Version="2024.6.7-0198-g80d0f756b0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="JlCRgDsjyHLMqBVCkP99UB" LanguageVersion="2024.6.7-0217-gb4f7c1f3e0" Version="0.128">
+  <NugetDependency Id="JksRdxQYvjzNbL0z98MHj6" Location="VL.CoreLib" Version="2024.6.7-0217-gb4f7c1f3e0" />
   <Patch Id="ClrgNIaQrudOtMQhIbNrlc">
     <Canvas Id="UXKBYSbAYUhO8OoaCDDEEC" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -31,7 +31,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="DzCrpyjlduuN3t6cMDoaVY" Name="Bounds" Kind="InputPin" DefaultValue="103, 176, 1090, 678" IsHidden="true" />
+            <Pin Id="DzCrpyjlduuN3t6cMDoaVY" Name="Bounds" Kind="InputPin" DefaultValue="103, 176, 1224, 678" IsHidden="true" />
             <Pin Id="VlMtVOdUozZNSz0iFS8jyL" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="MKznjfhnFhFOBA2yYHSSGI" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="VZHz11Bva2WO29wwrhcaoj" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -103,6 +103,7 @@
             <Pin Id="E5gCUOS8m6cMCTK9bpx84n" Name="Paint" Kind="InputPin" />
             <Pin Id="SpRKZnJi4OqK9gbhCxQJJG" Name="Enabled" Kind="InputPin" />
             <Pin Id="Dwm8zB2Erb5QS7g1hL7dJX" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="VID5Dvd5iqyPvmpUTiC8ZX" Name="Layout" Kind="OutputPin" />
           </Node>
           <Node Bounds="176,290,62,26" Id="GqFoADzGZVzM48oCbupWGL">
             <p:NodeReference LastCategoryFullName="Flex.IFlexElement" LastDependency="VL.Yoga.vl">
@@ -139,6 +140,7 @@
             <Pin Id="DsY8G9h8O1nLMDpC9GLcfU" Name="Paint" Kind="InputPin" />
             <Pin Id="FjrSSGTOFj8MmHevV77fal" Name="Enabled" Kind="InputPin" />
             <Pin Id="NShwL37M4AyNZWYdeSRApj" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="UrPrlNfg7mYMd0zc6qMBcH" Name="Layout" Kind="OutputPin" />
           </Node>
           <Node Bounds="143,110,39,19" Id="NMP0YXimxSYMRzziFVB7Xc">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
@@ -164,6 +166,7 @@
             <Pin Id="VBchZSXwjNrQJ7iHWwpQ2Z" Name="Paint" Kind="InputPin" />
             <Pin Id="BQPrXCgFpwnNU7W63zMpOG" Name="Enabled" Kind="InputPin" />
             <Pin Id="JQpiDxZhgGkLoG6AnD0Wuv" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="ItCfKMCBdJSLUaRKeF3qd2" Name="Layout" Kind="OutputPin" />
           </Node>
           <Pad Id="JFkWQw57lcyMpH6ozWeUNX" SlotId="Tb3aKp1TEAbNSl33ERSnlR" Bounds="181,-8" />
           <Pad Id="R0r643lDn3BMgTB1181EqJ" SlotId="Tb3aKp1TEAbNSl33ERSnlR" Bounds="397,7" />
@@ -223,6 +226,7 @@
                 <Pin Id="Dn3XN5F5GhGMD7a9THej7I" Name="Paint" Kind="InputPin" />
                 <Pin Id="Eb1K9PItytaLorGOIgOt2C" Name="Enabled" Kind="InputPin" />
                 <Pin Id="Hw1GWgOQyXOQWQQkgH7yFr" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="Qb5v2tdCyigMBl2noiHy1L" Name="Layout" Kind="OutputPin" />
               </Node>
             </Patch>
             <ControlPoint Id="EDGvcYoiqoDPsI309ao1Uo" Bounds="257,-161" Alignment="Bottom" />
@@ -356,6 +360,7 @@
                 <Pin Id="LGoNPXlhJGGNStd4c6YUuv" Name="Paint" Kind="InputPin" />
                 <Pin Id="RmThl50UOLfMCSVMhHORaw" Name="Enabled" Kind="InputPin" />
                 <Pin Id="EhffTOoJk54NolebMtX6Zw" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="NlD5Fj8Z9MUPqNIlXkvtXl" Name="Layout" Kind="OutputPin" />
               </Node>
               <Node Bounds="-47,-96,100,19" Id="GikwALUT0ZjO5n1K9a2sst">
                 <p:NodeReference LastCategoryFullName="Flex.Style" LastDependency="VL.Yoga.dll">
@@ -507,6 +512,6 @@
     </Node>
   </Patch>
   <DocumentDependency Id="JYBFDkvgcI3MbKgbKZOciF" Location="../VL.Yoga.vl" />
-  <NugetDependency Id="Gr1nZx1ksX1MeJpGgDZtGM" Location="VL.Skia" Version="2024.6.7-0198-g80d0f756b0" />
+  <NugetDependency Id="Gr1nZx1ksX1MeJpGgDZtGM" Location="VL.Skia" Version="2024.6.7-0217-gb4f7c1f3e0" />
   <PlatformDependency Id="FDIsarQGxrqO13JJm3PxBg" Location="W:/VVVV/__nugets/VL.Yoga/.tests/lib/net8.0-windows/VL.Yoga.dll" />
 </Document>

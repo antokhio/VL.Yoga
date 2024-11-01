@@ -8,22 +8,25 @@
 
     public static partial class Style
     {
-        // Template style
+        // TEMPLATE
         /*
-        public record struct StyleFlex(IFlexStyle? Style, float Flex) : IFlexStyle
-        {
-            public void ApplyStyle(IFlexNode node)
-            {
-                unsafe
-                {
-                    Interop.YGNodeStyleSetFlex(node.GetHandle(), Flex);
-                }
-
-                Style?.ApplyStyle(node);
-            }
-        }
-
-        public static StyleFlex SetFlex(IFlexStyle? style, float flex) => new(style, flex);
+        public static Style.Internal.StyleFlex SetFlex(IFlexStyle? style, float flex) => new(style, flex);
         */
     }
+}
+
+namespace Flex.Internal
+{
+    // TEMPLATE
+
+    /*
+    public unsafe record struct StyleFlex(IFlexStyle? Style, float Flex) : IFlexStyle
+    {
+        public void ApplyStyle(IFlexNode node)
+        {
+            node.GetHandle()->SetFlex(Flex);
+            Style?.ApplyStyle(node);
+        }
+    }
+    */
 }

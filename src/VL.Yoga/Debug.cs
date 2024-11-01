@@ -25,18 +25,19 @@ namespace Flex
             {
                 if (node != null)
                 {
-                    var config = Interop.YGNodeGetConfig(node.GetHandle());
-                    var hasConfig = config is not null;
-
-                    if (hasConfig)
+                    var handle = node.GetHandle();
+                    if (handle != null)
                     {
-                        return JsonSerializer.Serialize(new
+                        var config = handle->GetConfig();
+                        if (config != null)
                         {
-                            useWebDefaults = Interop.YGConfigGetUseWebDefaults(config),
-                            pointScaleFactor = Interop.YGConfigGetPointScaleFactor(config),
-                            errata = Interop.YGConfigGetErrata(config),
-                            experimentalFeatureWebFlexBasis = Interop.YGConfigIsExperimentalFeatureEnabled(config, YGExperimentalFeature.WebFlexBasis)
-                        }, SerializerOptions());
+                            return JsonSerializer.Serialize(new
+                            {
+                                useWebDefaults = config->GetUseWebDefaults(),
+                                pointScaleFactor = config->GetPointScaleFactor(),
+                                errata = config->GetErrata(),
+                            }, SerializerOptions());
+                        }
                     }
                 }
 
@@ -50,81 +51,83 @@ namespace Flex
             {
                 if (node != null)
                 {
+                    var handle = node.GetHandle();
+
                     return JsonSerializer.Serialize(new
                     {
-                        direction = Interop.YGNodeStyleGetDirection(node.GetHandle()),
-                        flexDirection = Interop.YGNodeStyleGetFlexDirection(node.GetHandle()),
-                        justifyContent = Interop.YGNodeStyleGetJustifyContent(node.GetHandle()),
-                        alignContent = Interop.YGNodeStyleGetAlignContent(node.GetHandle()),
-                        alignItems = Interop.YGNodeStyleGetAlignItems(node.GetHandle()),
-                        alignSelf = Interop.YGNodeStyleGetAlignSelf(node.GetHandle()),
-                        positionType = Interop.YGNodeStyleGetPositionType(node.GetHandle()),
-                        flexWrap = Interop.YGNodeStyleGetFlexWrap(node.GetHandle()),
-                        overflow = Interop.YGNodeStyleGetOverflow(node.GetHandle()),
-                        display = Interop.YGNodeStyleGetDisplay(node.GetHandle()),
-                        flex = Interop.YGNodeStyleGetFlex(node.GetHandle()),
-                        flexGrow = Interop.YGNodeStyleGetFlexGrow(node.GetHandle()),
-                        flexShrink = Interop.YGNodeStyleGetFlexShrink(node.GetHandle()),
-                        flexBasis = Interop.YGNodeStyleGetFlexBasis(node.GetHandle()),
+                        direction = handle->GetDirection(),
+                        flexDirection = handle->GetFlexDirection(),
+                        justifyContent = handle->GetJustifyContent(),
+                        alignContent = handle->GetAlignContent(),
+                        alignItems = handle->GetAlignItems(),
+                        alignSelf = handle->GetAlignSelf(),
+                        positionType = handle->GetPositionType(),
+                        flexWrap = handle->GetFlexWrap(),
+                        overflow = handle->GetOverflow(),
+                        display = handle->GetDisplay(),
+                        flex = handle->GetFlex(),
+                        flexGrow = handle->GetFlexGrow(),
+                        flexShrink = handle->GetFlexShrink(),
+                        flexBasis = handle->GetFlexBasis(),
 
                         position = new
                         {
-                            Left = Interop.YGNodeStyleGetPosition(node.GetHandle(), YGEdge.Left),
-                            Right = Interop.YGNodeStyleGetPosition(node.GetHandle(), YGEdge.Right),
-                            Top = Interop.YGNodeStyleGetPosition(node.GetHandle(), YGEdge.Top),
-                            Bottom = Interop.YGNodeStyleGetPosition(node.GetHandle(), YGEdge.Bottom),
-                            Horizontal = Interop.YGNodeStyleGetPosition(node.GetHandle(), YGEdge.Horizontal),
-                            Vertical = Interop.YGNodeStyleGetPosition(node.GetHandle(), YGEdge.Vertical),
-                            All = Interop.YGNodeStyleGetPosition(node.GetHandle(), YGEdge.All),
+                            left = handle->GetPosition(YGEdge.Left),
+                            right = handle->GetPosition(YGEdge.Right),
+                            top = handle->GetPosition(YGEdge.Top),
+                            bottom = handle->GetPosition(YGEdge.Bottom),
+                            horizontal = handle->GetPosition(YGEdge.Horizontal),
+                            vertical = handle->GetPosition(YGEdge.Vertical),
+                            all = handle->GetPosition(YGEdge.All),
                         },
 
                         margin = new
                         {
-                            Left = Interop.YGNodeStyleGetMargin(node.GetHandle(), YGEdge.Left),
-                            Right = Interop.YGNodeStyleGetMargin(node.GetHandle(), YGEdge.Right),
-                            Top = Interop.YGNodeStyleGetMargin(node.GetHandle(), YGEdge.Top),
-                            Bottom = Interop.YGNodeStyleGetMargin(node.GetHandle(), YGEdge.Bottom),
-                            Horizontal = Interop.YGNodeStyleGetMargin(node.GetHandle(), YGEdge.Horizontal),
-                            Vertical = Interop.YGNodeStyleGetMargin(node.GetHandle(), YGEdge.Vertical),
-                            All = Interop.YGNodeStyleGetMargin(node.GetHandle(), YGEdge.All),
+                            left = handle->GetMargin(YGEdge.Left),
+                            right = handle->GetMargin(YGEdge.Right),
+                            top = handle->GetMargin(YGEdge.Top),
+                            bottom = handle->GetMargin(YGEdge.Bottom),
+                            horizontal = handle->GetMargin(YGEdge.Horizontal),
+                            vertical = handle->GetMargin(YGEdge.Vertical),
+                            all = handle->GetMargin(YGEdge.All),
                         },
 
                         padding = new
                         {
-                            Left = Interop.YGNodeStyleGetMargin(node.GetHandle(), YGEdge.Left),
-                            Right = Interop.YGNodeStyleGetMargin(node.GetHandle(), YGEdge.Right),
-                            Top = Interop.YGNodeStyleGetMargin(node.GetHandle(), YGEdge.Top),
-                            Bottom = Interop.YGNodeStyleGetMargin(node.GetHandle(), YGEdge.Bottom),
-                            Horizontal = Interop.YGNodeStyleGetMargin(node.GetHandle(), YGEdge.Horizontal),
-                            Vertical = Interop.YGNodeStyleGetMargin(node.GetHandle(), YGEdge.Vertical),
-                            All = Interop.YGNodeStyleGetMargin(node.GetHandle(), YGEdge.All),
+                            left = handle->GetPadding(YGEdge.Left),
+                            right = handle->GetPadding(YGEdge.Right),
+                            top = handle->GetPadding(YGEdge.Top),
+                            bottom = handle->GetPadding(YGEdge.Bottom),
+                            horizontal = handle->GetPadding(YGEdge.Horizontal),
+                            vertical = handle->GetPadding(YGEdge.Vertical),
+                            all = handle->GetPadding(YGEdge.All),
                         },
 
                         border = new
                         {
-                            Left = Interop.YGNodeStyleGetBorder(node.GetHandle(), YGEdge.Left),
-                            Right = Interop.YGNodeStyleGetBorder(node.GetHandle(), YGEdge.Right),
-                            Top = Interop.YGNodeStyleGetBorder(node.GetHandle(), YGEdge.Top),
-                            Bottom = Interop.YGNodeStyleGetBorder(node.GetHandle(), YGEdge.Bottom),
-                            Horizontal = Interop.YGNodeStyleGetBorder(node.GetHandle(), YGEdge.Horizontal),
-                            Vertical = Interop.YGNodeStyleGetBorder(node.GetHandle(), YGEdge.Vertical),
-                            All = Interop.YGNodeStyleGetBorder(node.GetHandle(), YGEdge.All),
+                            left = handle->GetBorder(YGEdge.Left),
+                            right = handle->GetBorder(YGEdge.Right),
+                            top = handle->GetBorder(YGEdge.Top),
+                            bottom = handle->GetBorder(YGEdge.Bottom),
+                            horizontal = handle->GetBorder(YGEdge.Horizontal),
+                            vertical = handle->GetBorder(YGEdge.Vertical),
+                            all = handle->GetBorder(YGEdge.All),
                         },
 
                         gap = new
                         {
-                            Column = Interop.YGNodeStyleGetGap(node.GetHandle(), YGGutter.Column),
-                            Row = Interop.YGNodeStyleGetGap(node.GetHandle(), YGGutter.Row),
-                            All = Interop.YGNodeStyleGetGap(node.GetHandle(), YGGutter.All),
+                            column = handle->GetGap(YGGutter.Column),
+                            row = handle->GetGap(YGGutter.Row),
+                            all = handle->GetGap(YGGutter.All),
                         },
 
-                        aspectRatio = Interop.YGNodeStyleGetAspectRatio(node.GetHandle()),
-                        width = Interop.YGNodeStyleGetWidth(node.GetHandle()),
-                        height = Interop.YGNodeStyleGetHeight(node.GetHandle()),
-                        minWidth = Interop.YGNodeStyleGetMinWidth(node.GetHandle()),
-                        minHeight = Interop.YGNodeStyleGetMinWidth(node.GetHandle()),
-                        maxWidth = Interop.YGNodeStyleGetMaxWidth(node.GetHandle()),
-                        maxHeight = Interop.YGNodeStyleGetMaxHeight(node.GetHandle()),
+                        aspectRatio = handle->GetAspectRatio(),
+                        width = handle->GetWidth(),
+                        height = handle->GetHeight(),
+                        minWidth = handle->GetMinWidth(),
+                        minHeight = handle->GetMinHeight(),
+                        maxWidth = handle->GetMaxWidth(),
+                        maxHeight = handle->GetMaxHeight(),
                     }, SerializerOptions());
                 }
 
