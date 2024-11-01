@@ -61,30 +61,38 @@ namespace VL.Yoga.Generator.Sources
         {{
             public static partial class {CLASS_NAME} 
             {{
-                {string.Join("\r\n", STYLES.Select((style) => FlexStyleImplementationSource(style.Key, style.Value)))}
+                {string.Join("\r\n", STYLES.Select((style) => FlexStyleSetter(style.Key, style.Value)))}
             }}
+        }}
+
+        namespace Flex.Internal
+        {{
+            {string.Join("\r\n", STYLES.Select((style) => FlexStyleStruct(style.Key, style.Value)))}
         }}
         ";
 
-        public static string FlexStyleImplementationSource(string name, Dictionary<string, string> attributes)
+        public static string FlexStyleSetter(string name, Dictionary<string, string> attributes)
         {
             var hasAttributes = attributes.Count > 0;
 
-            return @$"   
-        public record struct {CLASS_NAME}{name}({INTERFACE_NAME}? Style{(hasAttributes ? ", " : "")}{string.Join(", ", attributes.Select((value) => $"{value.Key} {value.Value.ToPascalCase()}"))}) : {INTERFACE_NAME}
-        {{
-            public void ApplyStyle(IFlexNode node)
-            {{
-                unsafe 
-                {{
-                    Interop.YGNodeStyleSet{name}(node.GetHandle(){(hasAttributes ? ", " : "")}{(hasAttributes ? string.Join(", ", attributes.Select((value) => value.Value.ToPascalCase())) : "")});
-                }}
-                Style?.ApplyStyle(node);
-            }}
-        }}
+            return $@"
+            public static Internal.{CLASS_NAME}{name} Set{name}({INTERFACE_NAME}? style{(hasAttributes ? ", " : "")}{string.Join(", ", attributes.Select((value) => $"{value.Key} {value.Value}"))}) => new(style{(hasAttributes ? ", " : "")}{string.Join(", ", attributes.Select((value) => value.Value))});
+            ";
+        }
 
-        public static {CLASS_NAME}{name} Set{name}({INTERFACE_NAME}? style{(hasAttributes ? ", " : "")}{string.Join(", ", attributes.Select((value) => $"{value.Key} {value.Value}"))}) => new {CLASS_NAME}{name}(style{(hasAttributes ? ", " : "")}{string.Join(", ", attributes.Select((value) => value.Value))});
-        ";
+        public static string FlexStyleStruct(string name, Dictionary<string, string> attributes)
+        {
+            var hasAttributes = attributes.Count > 0;
+            return $@"
+            public unsafe record struct {CLASS_NAME}{name}({INTERFACE_NAME}? Style{(hasAttributes ? ", " : "")}{string.Join(", ", attributes.Select((value) => $"{value.Key} {value.Value.ToPascalCase()}"))}) : {INTERFACE_NAME}
+            {{
+                public void ApplyStyle(IFlexNode node)
+                {{
+                    node.GetHandle()->Set{name}({(hasAttributes ? string.Join(", ", attributes.Select((value) => value.Value.ToPascalCase())) : "")});
+                    Style?.ApplyStyle(node);
+                }} 
+            }}
+            ";
         }
     }
 }
