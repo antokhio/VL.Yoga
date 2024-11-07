@@ -26,6 +26,8 @@ namespace Flex
         {
             // TODO: Figure out how to reset config
             handle->SetPointScaleFactor(0);
+            handle->SetErrata(YGErrata.None);
+            handle->SetUseWebDefaults(false);
 
             if (node != null)
             {

@@ -11,8 +11,36 @@ namespace Flex
         public unsafe YGNode* GetHandle();
     }
 
-    [ProcessNode(HasStateOutput = true, FragmentSelection = FragmentSelection.Implicit)]
-    public partial class FlexNode : IFlexNode, IDisposable
+    [ProcessNode(Name = "FlexNode")]
+    public class FlexProcess
+    {
+        private FlexNode _output = new FlexNode();
+
+        private bool shouldInvalidate;
+
+        public void Update(out IFlexNode output, Spread<IFlexNode?>? children = null, IFlexStyle? style = null, IChannel<FlexLayout>? layoutChannel = null)
+        {
+            shouldInvalidate =
+                // invalidate by style
+                (_output.Style == null && style != null) ||
+                (style == null && _output.Style != null) ||
+                (!style?.Equals(_output.Style) ?? false) ||
+                // invalidate by children
+                children != _output.Children;
+
+            if (shouldInvalidate)
+            {
+                _output.Children = children;
+                _output.Style = style;
+            }
+
+            _output.UpdateLayout(layoutChannel);
+
+            output = _output;
+        }
+    }
+
+    public class FlexNode : IFlexNode, IDisposable
     {
         protected unsafe readonly YGNode* handle = YGNode.New();
         public unsafe YGNode* GetHandle() => handle;
@@ -27,9 +55,8 @@ namespace Flex
             get => layout;
         }
 
-        private IEnumerable<IFlexNode?>? children = null;
-        [Fragment(IsHidden = false)]
-        public IEnumerable<IFlexNode?>? Children
+        private Spread<IFlexNode?>? children = null;
+        public Spread<IFlexNode?>? Children
         {
             internal get => children;
             set
@@ -67,7 +94,6 @@ namespace Flex
         }
 
         private IFlexStyle? style = null;
-        [Fragment(IsHidden = false)]
         public IFlexStyle? Style
         {
             get => style;
@@ -75,6 +101,8 @@ namespace Flex
             {
                 if (value != style)
                 {
+                    ResetStyle();
+
                     value?.ApplyStyle(this);
 
                     style = value;
@@ -82,8 +110,17 @@ namespace Flex
             }
         }
 
-        [Fragment(IsHidden = false)]
-        public void Update(in IChannel<FlexLayout>? layoutChannel = null)
+        public void ResetStyle()
+        {
+            unsafe
+            {
+                var bulkNode = YGNode.New();
+                GetHandle()->CopyStyle(bulkNode);
+                bulkNode->Dispose();
+            }
+        }
+
+        public void UpdateLayout(in IChannel<FlexLayout>? layoutChannel = null)
         {
             if (HasNewLayout)
             {
@@ -98,7 +135,6 @@ namespace Flex
             }
         }
 
-        [Fragment(IsHidden = true)]
         public bool HasNewLayout
         {
             get
@@ -116,8 +152,6 @@ namespace Flex
                 }
             }
         }
-
-        [Fragment(IsHidden = true)]
         public bool IsDirty
         {
             get
@@ -135,7 +169,7 @@ namespace Flex
                 }
             }
         }
-        [Fragment(IsHidden = true)]
+
         public void Dispose()
         {
             unsafe
