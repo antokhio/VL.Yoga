@@ -40,6 +40,8 @@ namespace Flex
         }
     }
 
+
+
     [ProcessNode(Name = "FlexLayout")]
     public class FlexLayoutProcess
     {
@@ -75,7 +77,7 @@ namespace Flex
                 }
                 else
                 {
-                    _flexConfig.ApplyConfig(node, config);
+                    _flexConfig.ApplyConfig(node!, config);
                 }
 
                 _config = config;
@@ -94,7 +96,7 @@ namespace Flex
                         _ownerDirection = ownerDirection;
                         _node = node;
 
-                        node.GetHandle()->CalculateLayout(_ownerWidth ?? float.NaN, _ownerHeight ?? float.NaN, _ownerDirection ?? YGDirection.Inherit);
+                        node!.GetHandle()->CalculateLayout(_ownerWidth ?? float.NaN, _ownerHeight ?? float.NaN, _ownerDirection ?? YGDirection.Inherit);
                     }
                 }
             }
