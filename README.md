@@ -1,3 +1,6 @@
+# Archived in favour of:
+https://github.com/antokhio/VL.Flex
+
 # VL.Yoga (WIP)
 
 Repository contains https://github.com/facebook/yoga implementation for [vvvv-gamma](https://visualprogramming.net/)  
