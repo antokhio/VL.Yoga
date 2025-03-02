@@ -1,5 +1,5 @@
-# Archived in favour of:
-https://github.com/antokhio/VL.Flex
+# Archived 
+In favour of [VL.Flex](https://github.com/antokhio/VL.Flex)
 
 # VL.Yoga (WIP)
 
